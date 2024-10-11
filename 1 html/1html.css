@@ -9,12 +9,12 @@
     margin: 0 auto;
 }
 
-.menu_conteiner {
+.conteiner {
     width: 1170px;
     margin: 0 auto;
 }
 
-.menu_flex {
+flex .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,12 +52,7 @@
     margin: 0 auto;
 }
 
-.text_conteiner {
-    width: 1170px;
-    margin: 0 auto;
-}
-
-.text_flex {
+flex .text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,8 +70,11 @@
     align-items: center;
     letter-spacing: 5px;
 }
-.one li {
-    list-style: none;
+.one p {
+    padding: 0 20px;
+}
+.one h4 {
+    padding: 0 20px;
 }
 
 .two {
