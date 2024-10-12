@@ -14,12 +14,6 @@
     margin: 0 auto;
 }
 
-flex .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .menu_inner {
     display: flex;
     justify-content: space-evenly;
@@ -52,7 +46,7 @@ flex .menu {
     margin: 0 auto;
 }
 
-flex .text {
+.text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,14 +82,16 @@ flex .text {
 .three {
     display: flex;
     align-items: center;
-    line-height: 40px;
-    padding: 10px 0;
+    line-height: 20px;
+    padding: 0 10px;
 }
 .three img {
     border-radius: 250px;
 }
-.three li {
-    list-style: none;
+.three p{
+    padding: 0 10px;
+    text-align: center;
+    font-size: large;
 }
 
 
