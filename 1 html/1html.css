@@ -66,12 +66,16 @@ main .conteiner {
     display: flex;
     align-items: center;
     letter-spacing: 5px;
+    margin-bottom: 14px;
 }
 .one p {
     padding: 0 20px;
+    font-size: 14px;
+    color: gray;
 }
 .one h4 {
     padding: 0 20px;
+    color: gray;
 }
 
 .two {
@@ -80,6 +84,12 @@ main .conteiner {
     line-height: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px 0;
+    margin-bottom: 30px;
+}
+.two h3 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 38px;
 }
 
 .three {
@@ -87,14 +97,26 @@ main .conteiner {
     align-items: center;
     line-height: 20px;
     padding: 0 10px;
+    margin-bottom: 28px;
 }
 .three img {
     border-radius: 250px;
 }
 .three p{
     padding: 0 10px;
-    text-align: center;
+    text-align: left;
     font-size: large;
+}
+#razrabcolor {
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+#vv {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 
 
@@ -103,10 +125,14 @@ main .conteiner {
     flex-direction: column;
     align-items: center;
 }
-
+.textend img {
+    margin-bottom: 48px;
+}
 .textend p {
     text-align: justify;
     width: 700px;
+    font-weight: 400;
+    font-size: 20px;
 }
 .textend p a:link {
     text-decoration: none;
