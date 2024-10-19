@@ -65,7 +65,7 @@
 }
 .kusr__div1__gradient {
     background-image: linear-gradient(to right top, #d77be5, #d376e5, #ce72e5, #ca6de5, #c569e5, #bd63e3, #b45de1, #ab57df, #9c4fda, #8d47d5, #7d3fd1, #6c38cc);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .kusr__div1 ul {
