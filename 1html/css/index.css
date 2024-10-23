@@ -13,10 +13,13 @@ body {
 }
 
 .menu {
-    width: 1174px;
     margin: 0 auto;
+    padding: 71px 180px 0;
+    margin-bottom: 69px;
 }
 nav .container {
+    max-width: 1174px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +38,9 @@ nav .container {
 }
 .menu_inner li {
     list-style: none;
+}
+.menu_inner li:first-child {
+    margin-right: 77px;
 }
 .menu_inner a:link {
     text-decoration: none;
@@ -57,7 +63,8 @@ nav .container {
 
 
 .text {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 main .container {
@@ -70,49 +77,45 @@ main .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    margin-bottom: 28px;
 }
-.one {
+.text__title {
     display: flex;
     align-items: center;
     letter-spacing: 5px;
     margin-bottom: 14px;
 }
-.one p {
+.text__title p {
     padding: 0 20px;
     font-size: 14px;
     color: gray;
 }
-.one h4 {
+.text__title h4 {
     padding: 0 20px;
     color: gray;
 }
 
-.two {
+.text__heading {
     font-size: 30px;
     text-align: center;
     line-height: 40px;
-    padding: 10px 0;
     margin-bottom: 30px;
 }
-.two h3 {
+.text__heading h3 {
     font-size: 24px;
-    margin: 0;
     line-height: 38px;
 }
 
-.three {
+.text__logo_and_last_names {
     display: flex;
     align-items: center;
     line-height: 20px;
-    padding: 0 10px;
-    margin-bottom: 28px;
 }
-.three img {
+.text__logo_and_last_names img {
     border-radius: 250px;
+    margin-right: 16px;
 }
-.three p{
-    padding: 0 10px;
+.text__logo_and_last_names p{
     text-align: left;
     font-size: large;
 }
@@ -133,18 +136,42 @@ main .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 103px;
 }
 .textend img {
-    margin-bottom: 48px;
+    margin-bottom: 69px;
 }
-.textend p {
+
+.textend__p_start {
     text-align: justify;
-    width: 700px;
     font-weight: 400;
     font-size: 20px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+
+.textend__p_midle {
+    font-size: 16px;
+    width: 700px;
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.textend__p_end {
+    font-size: 15px;
+    width: 700px;
+    text-align: justify;
+    font-weight: 400;
 }
 .textend p a:link {
     text-decoration: none;
+}
+.footer {
+    color: gray;
+    padding-bottom: 77px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
