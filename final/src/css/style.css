@@ -1,1 +1,86 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+.container {
+  width: 1392px;
+  margin: 0 auto;
+}
+
+.main-section {
+  position: relative;
+  min-height: 846px;
+  background-color: #357EFE;
+  padding-top: 40px;
+}
+.main-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 113px;
+}
+.main-section__text-and-logo {
+  display: flex;
+  justify-content: center;
+}
+.main-section__finance {
+  margin-bottom: 40px;
+}
+.main-section__try-for-free {
+  margin-bottom: 80px;
+}
+
+.navigation__ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.navigation__ul a {
+  position: static;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.personal-account__button {
+  padding: 12px 32px;
+  border-radius: 34px;
+  border: none;
+  color: #FFFFFF;
+}
+.personal-account__button a {
+  text-decoration: none;
+  color: #357EFE;
+}
+
+.finance-text {
+  text-align: left;
+}
+.finance-text__h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.try-for-free__button {
+  padding: 12px 32px;
+  border-radius: 34px;
+  border: none;
+  color: #FFFFFF;
+}
+.try-for-free__button a {
+  text-decoration: none;
+  color: #357EFE;
+}
+
+.computer-logo__outside {
+  position: relative;
+}
+.computer-logo__inside {
+  position: absolute;
+  right: 160px;
+  top: 230px;
+}/*# sourceMappingURL=style.css.map */
