@@ -11,11 +11,13 @@ $color-blue: #357EFE
     width: 1392px
     margin: 0 auto
 
+
 .main-section
     position: relative
     min-height: 846px
     background-color: #357EFE
     padding-top: 40px
+    overflow: hidden
     &__header
         display: flex
         justify-content: space-between
@@ -24,10 +26,12 @@ $color-blue: #357EFE
     &__text-and-logo
         display: flex
         justify-content: center
+        margin-bottom: 80px
     &__finance
         margin-bottom: 40px
     &__try-for-free
         margin-bottom: 80px
+
 
 .navigation
     &__ul
@@ -71,7 +75,45 @@ $color-blue: #357EFE
 .computer-logo
     &__outside
         position: relative
+        z-index: 1
     &__inside
         position: absolute
-        right: 160px
+        right: 385px
         top: 230px
+        z-index: 1
+    &__reg
+        position: absolute
+        bottom: -90px
+        left: 0px
+        width: 2312px
+        height: 312px
+        background-color: #FFFFFF
+        transform: rotate(-7.00deg)
+        z-index: 0
+
+.second-section
+    background-color: #FFFFFF
+.functions__flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 64px
+    &__one
+        display: flex
+        align-items: center
+        gap: 16px
+    &__two
+        display: flex
+        align-items: center
+        gap: 16px
+    &__three
+        display: flex
+        align-items: center
+        gap: 16px
+.functions_items
+        font-size: 24px
+        font-weight: 700
+
+
+
+    

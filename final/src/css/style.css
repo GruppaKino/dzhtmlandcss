@@ -14,6 +14,7 @@
   min-height: 846px;
   background-color: #357EFE;
   padding-top: 40px;
+  overflow: hidden;
 }
 .main-section__header {
   display: flex;
@@ -24,6 +25,7 @@
 .main-section__text-and-logo {
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
 }
 .main-section__finance {
   margin-bottom: 40px;
@@ -78,9 +80,52 @@
 
 .computer-logo__outside {
   position: relative;
+  z-index: 1;
 }
 .computer-logo__inside {
   position: absolute;
-  right: 160px;
+  right: 385px;
   top: 230px;
+  z-index: 1;
+}
+.computer-logo__reg {
+  position: absolute;
+  bottom: -90px;
+  left: 0px;
+  width: 2312px;
+  height: 312px;
+  background-color: #FFFFFF;
+  transform: rotate(-7deg);
+  z-index: 0;
+}
+
+.second-section {
+  background-color: #FFFFFF;
+}
+
+.functions__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+.functions__flex__one {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.functions__flex__two {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.functions__flex__three {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.functions_items {
+  font-size: 24px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
