@@ -1,0 +1,77 @@
+$color-blue: #357EFE
+
+
+*
+    box-sizing: border-box
+    font-family: "Inter"
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
+
+.container
+    width: 1392px
+    margin: 0 auto
+
+.main-section
+    position: relative
+    min-height: 846px
+    background-color: #357EFE
+    padding-top: 40px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 113px
+    &__text-and-logo
+        display: flex
+        justify-content: center
+    &__finance
+        margin-bottom: 40px
+    &__try-for-free
+        margin-bottom: 80px
+
+.navigation
+    &__ul
+        display: flex
+        justify-content: center
+        gap: 32px
+        & a
+            position: static
+            text-decoration: none
+            color: #FFFFFFCC
+            font-size: 18px
+            font-weight: 500
+
+.personal-account
+    &__button
+        padding: 12px 32px
+        border-radius: 34px
+        border: none
+        color: #FFFFFF
+        & a
+            text-decoration: none
+            color: $color-blue
+            
+.finance-text
+    text-align: left
+    &__h2
+        font-size: 40px
+        font-weight: 800
+        color: #FFFFFF
+
+.try-for-free
+    &__button
+        padding: 12px 32px
+        border-radius: 34px
+        border: none
+        color: #FFFFFF
+        & a
+            text-decoration: none
+            color: $color-blue
+
+.computer-logo
+    &__outside
+        position: relative
+    &__inside
+        position: absolute
+        right: 160px
+        top: 230px
