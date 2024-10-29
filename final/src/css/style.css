@@ -84,7 +84,7 @@
 }
 .computer-logo__inside {
   position: absolute;
-  right: 385px;
+  right: 164px;
   top: 230px;
   z-index: 1;
 }
@@ -106,6 +106,13 @@
 .second-section__functions {
   margin-bottom: 144px;
 }
+.second-section__statistics {
+  margin-bottom: 80px;
+}
+.second-section__statistics:last-child {
+  margin: 0px;
+}
+
 .functions__flex {
   display: flex;
   justify-content: space-between;
@@ -134,7 +141,6 @@
 }
 
 .cash-gaps {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,18 +149,116 @@
   text-align: left;
 }
 .cash-gaps__left__h3 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 24px;
   width: 510px;
+  line-height: 120%;
 }
 .cash-gaps__left__p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(78, 93, 124, 0.5019607843);
   width: 482px;
+  line-height: 120%;
 }
 .cash-gaps__right__img {
   width: 729px;
+}
+
+.reports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.reports__left__img {
+  width: 644px;
+}
+.reports__right {
+  text-align: left;
+}
+.reports__right__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+  width: 571px;
+  line-height: 120%;
+}
+.reports__right__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  width: 565px;
+  line-height: 140%;
+}
+
+.profit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.profit__left {
+  text-align: left;
+}
+.profit__left__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 29px;
+  width: 566px;
+  line-height: 120%;
+}
+.profit__left__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  width: 526px;
+  line-height: 140%;
+}
+
+.expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 247px;
+}
+.expenses__left {
+  position: relative;
+}
+.expenses__left__img-big {
+  width: 461px;
+}
+.expenses__left__img-small {
+  position: absolute;
+  width: 450px;
+  left: 170px;
+  bottom: 145px;
+}
+.expenses__right {
+  text-align: left;
+}
+.expenses__right__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 30px;
+  width: 566px;
+  line-height: 120%;
+}
+.expenses__right__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  width: 566px;
+  line-height: 140%;
+}
+
+.basic-statistics__hr {
+  margin: 0px;
+  margin-bottom: 80px;
+  color: rgba(78, 93, 124, 0.5019607843);
 }/*# sourceMappingURL=style.css.map */
