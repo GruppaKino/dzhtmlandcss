@@ -1,5 +1,5 @@
 $color-blue: #357EFE
-
+$color-for-statistics: #4E5D7C80
 
 *
     box-sizing: border-box
@@ -10,7 +10,6 @@ $color-blue: #357EFE
 .container
     width: 1392px
     margin: 0 auto
-
 
 .main-section
     position: relative
@@ -93,6 +92,12 @@ $color-blue: #357EFE
 
 .second-section
     background-color: #FFFFFF
+    overflow: hidden
+    &__functions
+        margin-bottom: 144px
+    &__statistics
+        
+
 .functions__flex
     display: flex
     justify-content: space-between
@@ -114,6 +119,27 @@ $color-blue: #357EFE
         font-size: 24px
         font-weight: 700
 
-
+.cash-gaps
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &__left
+        text-align: left
+        &__h3
+            font-size: 50px
+            font-weight: 600
+            color: #000000
+            margin-bottom: 24px
+            width: 510px
+        &__p
+            font-size: 18px
+            font-weight: 500
+            color: $color-for-statistics
+            width: 482px
+    &__right
+        
+        &__img
+            width: 729px
 
     
