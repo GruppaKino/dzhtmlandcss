@@ -1,14 +1,20 @@
+@charset "UTF-8";
+/* задали цвета, которые используются слишком часто */
+/* задал общие значения для сайта, шрифт и как должны позиционироваться блоки на сайте */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Inter";
 }
 
+/* импотировал шрифт Inter из google fonts */
+/* задал общий контейнер для всех блоков для позиционирования на сайте */
 .container {
   width: 1392px;
   margin: 0 auto;
 }
 
+/* общие значения для первой секции (отступы и flex-сы) */
 .main-section {
   min-height: 846px;
   background-color: #357EFE;
@@ -31,6 +37,7 @@
 }
 .main-section__try-for-free {
   margin-bottom: 80px;
+  /* ниже значения для большого прямоугольника (превая секция) */
 }
 .main-section__reg {
   position: absolute;
@@ -43,6 +50,7 @@
   z-index: 0;
 }
 
+/* занчения для навигационного меню в первой секции */
 .navigation__ul {
   display: flex;
   justify-content: center;
@@ -56,6 +64,7 @@
   font-weight: 500;
 }
 
+/* заначения для кнопки "личный кабинет" в первой секции */
 .personal-account__button {
   padding: 12px 32px;
   border-radius: 34px;
@@ -67,6 +76,7 @@
   color: #357EFE;
 }
 
+/* заначения для текста в середине первой секции (левая часть сердней секции) */          
 .finance-text {
   text-align: left;
 }
@@ -76,6 +86,7 @@
   color: #FFFFFF;
 }
 
+/* значения для кнопки "попробовать 14 дней бесплатно" первой секции (левая часть средней секции) */
 .try-for-free__button {
   padding: 12px 32px;
   border-radius: 34px;
@@ -87,6 +98,7 @@
   color: #357EFE;
 }
 
+/* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .computer-logo {
   position: relative;
 }
@@ -101,6 +113,7 @@
   z-index: 2;
 }
 
+/* общие значения для второй секции (отступы) */
 .second-section {
   background-color: #FFFFFF;
   overflow: hidden;
@@ -114,7 +127,11 @@
 .second-section__statistics:last-child {
   margin: 0px;
 }
+.second-section__basic-statistics {
+  margin-bottom: 120px;
+}
 
+/* значения для footer первой секции (flex-сы) */
 .functions__flex {
   display: flex;
   justify-content: space-between;
@@ -137,11 +154,13 @@
   gap: 16px;
 }
 
+/* модификатор для functions__flex */
 .functions_items {
   font-size: 24px;
   font-weight: 700;
 }
 
+/* значения для первой колонки в second-section__basic-statistics (кассовые разрывы) */
 .cash-gaps {
   display: flex;
   justify-content: center;
@@ -169,6 +188,7 @@
   width: 729px;
 }
 
+/* значения для второй колонки в second-section__basic-statistics (Отчеты о прибыли и убытках) */
 .reports {
   display: flex;
   justify-content: center;
@@ -197,6 +217,7 @@
   line-height: 140%;
 }
 
+/* значение третьей колонки в second-section__basic-statistics (товары и прибыль) */
 .profit {
   display: flex;
   justify-content: center;
@@ -222,6 +243,7 @@
   line-height: 140%;
 }
 
+/* значение четвертой колонки в second-section__basic-statistics (про сокращение расходов) */
 .expenses {
   display: flex;
   justify-content: center;
@@ -259,12 +281,14 @@
   line-height: 140%;
 }
 
+/* разделительная линия между колонками в basic-statistics */
 .basic-statistics__hr {
   margin: 0px;
   margin-bottom: 80px;
   color: rgba(78, 93, 124, 0.5019607843);
 }
 
+/* общие значения для третьей секции */ 
 .third-section {
   background-color: #357EFE;
 }
@@ -272,6 +296,7 @@
   margin-bottom: 64px;
 }
 
+/* значения для верхнего third-section__time-saving (h3, p, button) */
 .time-saving__upper-level {
   padding-top: 120px;
   text-align: center;
@@ -305,6 +330,7 @@
   line-height: 140%;
 }
 
+/* значения для среднего уровня third-section__time-saving (накладывание фото друг на друга) */
 .time-saving__intermediate-level {
   display: flex;
   justify-content: center;
@@ -338,6 +364,7 @@
   left: 718px;
 }
 
+/* значения для third-section__time-saving (flex) */
 .comparison-with-excel {
   display: flex;
   justify-content: center;
@@ -347,10 +374,12 @@
   margin-right: 24px;
 }
 
+/* является "родителем" по отношению к excel__li */ 
 .excel-and-finio:last-child {
   margin: 0px;
 }
 
+/* является "дочерней" по отношению к excel-and-finio */
 .excel__li {
   display: flex;
   align-items: center;
@@ -368,6 +397,7 @@
   line-height: 140%;
 }
 
+/* является "дочерней" по отношению к excel-and-finio */   
 .finio__li {
   display: flex;
   align-items: center;
@@ -385,11 +415,13 @@
   line-height: 140%;
 }
 
+/* Общее значение для четвертой секции */ 
 .fourth-section {
   padding-top: 120px;
   margin-bottom: 80px;
 }
 
+/* является "родителем" по отношению к advantages-flex__servers servers, advantages-flex__encryption encryption и advantages-flex__data-protection */
 .advantages-flex {
   display: flex;
   justify-content: center;
@@ -397,6 +429,7 @@
   gap: 78px;
 }
 
+/* является "дочерней" по отношению к advantages-flex */
 .servers {
   text-align: left;
 }
@@ -417,6 +450,7 @@
   line-height: 140%;
 }
 
+/* является "дочерней" по отношению к advantages-flex */  
 .encryption {
   text-align: left;
 }
@@ -437,6 +471,7 @@
   line-height: 140%;
 }
 
+/* является "дочерней" по отношению к advantages-flex */
 .data-protection {
   text-align: left;
 }

@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- первая секция с навигационным меню по странице -->
     <section class="main-section">
         <div class="container main-section__header">
+            <!-- лого компании лева от навигационного меню -->
             <div class="main_section__title-logo logo">
                 <img src="./img/finio.png" alt="Основное лого">
             </div>
+            <!-- само навигационное меню -->
             <nav class="main-section__nav navigation">
                 <ul class="navigation__ul">
                     <li><a href="#">Возможности</a></li>
@@ -22,13 +25,16 @@
                     <li><a href="#">Поддержка клинтов</a></li>
                 </ul>
             </nav>
+            <!-- личный кабинет справа от навигационного меню -->
             <div class="main-section__personal-account personal-account">
                 <button class="personal-account__button">
                     <a href="#">Личный кабинет</a>
                 </button>
             </div>
         </div>
+        <!-- вторая часть первой секции, где слева текст с h1 и иконками компаний, а справа img компьютера-->
         <div class="container main-section__text-and-logo">
+            <!-- это левая часть среднего уровня, где h1 и иконки -->
             <div class="main-section__left-finance left-finance">
                 <div class="main-section__finance finance-text">
                     <h2 class="finance-text__h2">
@@ -44,9 +50,11 @@
                     <img src="./icons/brands.png" alt="иконки брендов">
                 </div>
             </div>
+            <!-- это правая часть среднего уровня, где картинка компьютера, и наложеный по - середине интерфейс к этой картинке -->
             <div class="main-section__right-finance right-finance">
                 <div class="main-section__computer-logo computer-logo">
                     <img src="./img/computer-logo.png" alt="Основное лого компютера посередине сайта" class="computer-logo__outside">
+                    <!-- это кривой прямоугольник, проходящий под img (компьютера и интерфейса) -->
                     <img src="./img/time-saving__index-0.png" alt="Информация внутри фото компьютера" class="computer-logo__inside">
                     <div class="main-section__reg reg">
                     </div>
@@ -54,7 +62,9 @@
             </div>
         </div>
     </section>
+    <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
     <section class="second-section">
+        <!-- second-section__functions - этот див, как не большое продолжение первой секции, типо footer -->
         <div class="container second-section__functions">
             <div class="functions__flex functions_backgraund">
                 <div class="functions__flex__one functions_items">
@@ -77,7 +87,9 @@
                 </div>
             </div>
         </div>
+        <!-- 4 колонки (div), где есть img и текст к ней (слева направо и наоборот) -->
         <div class="container second-section__basic-statistics">
+            <!-- первая колонка про "кассовые разрывы" -->
             <div class="second-section__statistics cash-gaps">
                 <div class="cash-gaps__left">
                     <h3 class="cash-gaps__left__h3">
@@ -91,7 +103,9 @@
                     <img src="./img/cash-gaps.png" alt="Статистика" class="cash-gaps__right__img">
                 </div>
             </div>
+            <!-- черта для разделения колонок -->
             <hr class="basic-statistics__hr">
+            <!-- вторая колонка про "Отчеты о прибыли и убытках" -->
             <div class="second-section__statistics reports">
                 <div class="reports__left">
                     <img src="./img/report 1.png" alt="Отчеты о прибыли" class="reports__left__img">
@@ -105,7 +119,9 @@
                     </p>
                 </div>
             </div>
+            <!-- черта для разделения колонок -->
             <hr class="basic-statistics__hr">
+            <!-- третья колонка про "товары и прибыль" -->
             <div class="second-section__statistics profit">
                 <div class="profit__left">
                     <h3 class="profit__left__h3">
@@ -119,8 +135,11 @@
                     <img src="./img/profit.png" alt="Какие товары приносят прибыль" class="profit-right__img">
                 </div>
             </div>
+            <!-- черта для разделения колонок -->
             <hr class="basic-statistics__hr">
+            <!-- последнаяя колонка про "про сокращение расходов" -->
             <div class="second-section__statistics expenses">
+                <!-- делал накладывание фоток друг на дурга -->
                 <div class="expenses__left">
                     <img src="./img/expenses_big.png" alt="Картинка с меньшем индексом" class="expenses__left__img-big">
                     <img src="./img/expenses_small.png" alt="Картинка с большим индексом" class="expenses__left__img-small">
@@ -136,8 +155,11 @@
             </div>
         </div>
     </section>
+    <!-- третья секция содержит в себе: тект про экономию времени h2, p, button; накладывание фотографий друг на друга и flex сравнивая Excel и FINIO -->
     <section class="third-section">
+        <!-- вложил в container для позиционирования на сайте -->
         <div class="container third-section__time-saving">
+            <!-- этот div содержит себе верхушку третьей секции -->
             <div class="third-section__title time-saving__upper-level">
                 <h2 class="time-saving__upper-level__h3">
                     Экономьте время и нервы на учет
@@ -151,6 +173,7 @@
                     </a>
                 </button>
             </div>
+            <!-- середина третьей секции, где идет накладывание фотографий друг на друга -->
             <div class="third-section__img time-saving__intermediate-level">
                 <img src="./img/time-saving__index-0.png" alt="Первое фото индекс 0" class="time-saving__intermediate-level__index-0">
                 <img src="./img/time-saving__index1.png" alt="Второе фото индекс 1" class="time-saving__intermediate-level__index-1">
@@ -158,6 +181,7 @@
                 <img src="./icons/time-saving__left.png" alt="Левая стрелка для иконки" class="time-saving__intermediate-level__icon-left-3">
                 <img src="./icons/time-saving__right.png" alt="Правая стрелка для иконки" class="time-saving__intermediate-level__icon-right-3">
             </div>
+            <!-- footer третьей секции, где я делал flex сравнения Excel и FINIO -->
             <div class="third-section__flex comparison-with-excel">
                 <div class="comparison-with-excel__left-wrapper">
                     <ul class="excel-and-finio">
@@ -224,9 +248,12 @@
             </div>
         </div>
     </section>
+    <!-- четвертая секция, не большая секция где я делал с помощью flex 3 колонки, где написаны преимушества использования технологий компании --> 
     <section class="fourth-section">
+        <!-- вложил в container для позиционирования на сайте -->
         <div class="container fourth-section__advantages">
             <div class="advantages-flex">
+                <!-- первая колонка об "надежности серверов" -->
                 <div class="advantages-flex__servers servers">
                     <div class="servers__img">
                         <img src="./icons/servers-img-cloud.png" alt="картинка сервера" class="servers__img-index-1">
@@ -238,6 +265,7 @@
                         Никакие события не скажутся на бесперебойной работе сервиса.
                     </p>
                 </div>
+                <!-- вторая колонка, об "Использовани SSL-шифрования" -->
                 <div class="advantages-flex__encryption encryption">
                     <div class="encryption__img">
                         <img src="./icons/encryption-icons.png" alt="картинка щита" class="encryption__img-shield">
@@ -248,7 +276,8 @@
                     <p class="encryption__p">
                         Ваши данные не могут быть перехвачены, даже при использовании открытых Wi-Fi сетей
                     </p>
-                </div> 
+                </div>
+                <!-- третья колонка об "не передачи данных другим лицам" -->
                 <div class="advantages-flex__data-protection">
                     <div class="data-protection__img">
                         <img src="./icons/data-protection-icons.png" alt="иконка, что аккаунт под защитой" class="data-protection__img-castle">
