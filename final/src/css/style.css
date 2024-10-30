@@ -493,7 +493,6 @@
 
 .customer-support {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 74px;
 }
