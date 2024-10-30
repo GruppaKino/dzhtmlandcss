@@ -1,16 +1,21 @@
+/* задали цвета, которые используются слишком часто */
 $color-blue: #357EFE
 $color-for-statistics: #4E5D7C80
 
+/* задал общие значения для сайта, шрифт и как должны позиционироваться блоки на сайте */
 *
     box-sizing: border-box
     font-family: "Inter"
 
+/* импотировал шрифт Inter из google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
 
+/* задал общий контейнер для всех блоков для позиционирования на сайте */
 .container
     width: 1392px
     margin: 0 auto
 
+/* общие значения для первой секции (отступы и flex-сы) */
 .main-section
     min-height: 846px
     background-color: #357EFE
@@ -29,6 +34,7 @@ $color-for-statistics: #4E5D7C80
         margin-bottom: 40px
     &__try-for-free
         margin-bottom: 80px
+        /* ниже значения для большого прямоугольника (превая секция) */
     &__reg
         position: absolute
         width: 2312px
@@ -39,7 +45,7 @@ $color-for-statistics: #4E5D7C80
         transform: rotate(-7.00deg)
         z-index: 0
 
-
+/* занчения для навигационного меню в первой секции */
 .navigation
     &__ul
         display: flex
@@ -51,7 +57,7 @@ $color-for-statistics: #4E5D7C80
             color: #FFFFFFCC
             font-size: 18px
             font-weight: 500
-
+/* заначения для кнопки "личный кабинет" в первой секции */
 .personal-account
     &__button
         padding: 12px 32px
@@ -61,14 +67,14 @@ $color-for-statistics: #4E5D7C80
         & a
             text-decoration: none
             color: $color-blue
-            
+/* заначения для текста в середине первой секции (левая часть сердней секции) */          
 .finance-text
     text-align: left
     &__h2
         font-size: 40px
         font-weight: 800
         color: #FFFFFF
-
+/* значения для кнопки "попробовать 14 дней бесплатно" первой секции (левая часть средней секции) */
 .try-for-free
     &__button
         padding: 12px 32px
@@ -78,7 +84,7 @@ $color-for-statistics: #4E5D7C80
         & a
             text-decoration: none
             color: $color-blue
-
+/* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .computer-logo
     position: relative
     &__outside
@@ -89,7 +95,7 @@ $color-for-statistics: #4E5D7C80
         right: 125px
         top: 36px
         z-index: 2
-
+/* общие значения для второй секции (отступы) */
 .second-section
     background-color: #FFFFFF
     overflow: hidden
@@ -99,7 +105,7 @@ $color-for-statistics: #4E5D7C80
         margin-bottom: 80px
         &:last-child
             margin: 0px
-
+/* значения для footer первой секции (flex-сы) */
 .functions__flex
     display: flex
     justify-content: space-between
@@ -117,6 +123,7 @@ $color-for-statistics: #4E5D7C80
         display: flex
         align-items: center
         gap: 16px
+/* модификатор для functions__flex */
 .functions_items
         font-size: 24px
         font-weight: 700

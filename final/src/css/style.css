@@ -1,14 +1,20 @@
+@charset "UTF-8";
+/* задали цвета, которые используются слишком часто */
+/* задал общие значения для сайта, шрифт и как должны позиционироваться блоки на сайте */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Inter";
 }
 
+/* импотировал шрифт Inter из google fonts */
+/* задал общий контейнер для всех блоков для позиционирования на сайте */
 .container {
   width: 1392px;
   margin: 0 auto;
 }
 
+/* общие значения для первой секции (отступы и flex-сы) */
 .main-section {
   min-height: 846px;
   background-color: #357EFE;
@@ -31,6 +37,7 @@
 }
 .main-section__try-for-free {
   margin-bottom: 80px;
+  /* ниже значения для большого прямоугольника (превая секция) */
 }
 .main-section__reg {
   position: absolute;
@@ -43,6 +50,7 @@
   z-index: 0;
 }
 
+/* занчения для навигационного меню в первой секции */
 .navigation__ul {
   display: flex;
   justify-content: center;
@@ -56,6 +64,7 @@
   font-weight: 500;
 }
 
+/* заначения для кнопки "личный кабинет" в первой секции */
 .personal-account__button {
   padding: 12px 32px;
   border-radius: 34px;
@@ -67,6 +76,7 @@
   color: #357EFE;
 }
 
+/* заначения для текста в середине первой секции (левая часть сердней секции) */          
 .finance-text {
   text-align: left;
 }
@@ -76,6 +86,7 @@
   color: #FFFFFF;
 }
 
+/* значения для кнопки "попробовать 14 дней бесплатно" первой секции (левая часть средней секции) */
 .try-for-free__button {
   padding: 12px 32px;
   border-radius: 34px;
@@ -87,6 +98,7 @@
   color: #357EFE;
 }
 
+/* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .computer-logo {
   position: relative;
 }
@@ -101,6 +113,7 @@
   z-index: 2;
 }
 
+/* общие значения для второй секции (отступы) */
 .second-section {
   background-color: #FFFFFF;
   overflow: hidden;
@@ -115,6 +128,7 @@
   margin: 0px;
 }
 
+/* значения для footer первой секции (flex-сы) */
 .functions__flex {
   display: flex;
   justify-content: space-between;
@@ -137,6 +151,7 @@
   gap: 16px;
 }
 
+/* модификатор для functions__flex */
 .functions_items {
   font-size: 24px;
   font-weight: 700;
