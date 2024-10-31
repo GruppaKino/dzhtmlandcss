@@ -578,7 +578,20 @@
 
 .tariffs__title {
   text-align: center;
+  padding-top: 80px;
   margin-bottom: 40px;
+}
+.tariffs__title__h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.tariffs__title__p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  color: rgba(78, 93, 124, 0.5019607843);
 }
 .tariffs__buttons-blue {
   padding: 12px 63px;
@@ -593,14 +606,27 @@
   font-weight: 800;
   line-height: 140%;
 }
-.tariffs__buttons-blue__h3 {
+.tariffs__buttons-white {
+  padding: 12px 63px;
+  border-radius: 47px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.tariffs__buttons-white a {
+  color: #357EFE;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+.tariffs__buttons-white__h3 {
   color: rgb(0, 0, 0);
   font-size: 48px;
   font-weight: 600;
   line-height: 120%;
   margin-bottom: 24px;
 }
-.tariffs__buttons-blue__p {
+.tariffs__buttons-white__p {
   color: rgba(78, 93, 124, 0.5019607843);
   font-size: 17px;
   font-weight: 500;
@@ -608,9 +634,8 @@
 }
 
 .subscriptions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  display: flex;
+  justify-content: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
 }
@@ -642,9 +667,19 @@
   line-height: 120%;
 }
 
+.subscriptions_white {
+  color: #FFFFFF;
+}
+
+.subscriptions_white-and-gray {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .calculation_background {
   padding: 8px 16px;
   background-color: #FFC736;
+  color: #FFFFFF;
+  border-radius: 8px;
 }
 
 .subscriptions-benefit {
@@ -658,11 +693,21 @@
 }
 
 .subscriptions_padding_first {
-  margin: 93px 40px 48px;
+  padding: 93px 40px 48px;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
 
 .subscriptions_padding_second {
-  margin: 48px 40px;
+  padding: 48px 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.subscriptions_padding_third {
+  padding: 48px 38px 48px 40px;
+  background-color: #357EFE;
+  border-radius: 8px;
 }
 
 .subscriptions_p-32 {

@@ -478,7 +478,18 @@ $color-for-background-calculation: #FFC736
 .tariffs
     &__title
         text-align: center
+        padding-top: 80px
         margin-bottom: 40px
+        &__h3
+            font-weight: 600
+            font-size: 48px
+            line-height: 120%
+            margin-bottom: 24px
+        &__p
+            font-weight: 500
+            font-size: 17px
+            line-height: 120%
+            color: #4E5D7C80
     &__buttons-blue
         padding: 12px 63px
         border-radius: 47px
@@ -486,6 +497,17 @@ $color-for-background-calculation: #FFC736
         border: none
         & a 
             color: #FFFFFF
+            text-decoration: none
+            font-size: 17px
+            font-weight: 800
+            line-height: 140%
+    &__buttons-white
+        padding: 12px 63px
+        border-radius: 47px
+        background-color: #FFFFFF
+        border: none
+        & a 
+            color: $color-blue
             text-decoration: none
             font-size: 17px
             font-weight: 800
@@ -503,9 +525,8 @@ $color-for-background-calculation: #FFC736
             line-height: 140%
 
 .subscriptions
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    align-items: center
+    display: flex
+    justify-content: center
     column-gap: 24px
     &__items
         text-align: left
@@ -530,9 +551,16 @@ $color-for-background-calculation: #FFC736
                 font-weight: 500
                 line-height: 120%
 
+.subscriptions_white
+    color: #FFFFFF
+.subscriptions_white-and-gray
+    color: #FFFFFF99
+
 .calculation_background
     padding: 8px 16px
-    background-color: $color-for-background-calculation 
+    background-color: $color-for-background-calculation
+    color: #FFFFFF
+    border-radius: 8px
 
 .subscriptions-benefit
     display: inline-block
@@ -544,9 +572,18 @@ $color-for-background-calculation: #FFC736
     margin-bottom: 16px
 
 .subscriptions_padding_first
-    margin: 93px 40px 48px
+    padding: 93px 40px 48px 
+    border: 1px solid gray
+    border-radius: 8px
 .subscriptions_padding_second
-    margin: 48px 40px
+    padding: 48px 40px
+    border: 1px solid gray
+    border-radius: 8px
+.subscriptions_padding_third
+    padding: 48px 38px 48px 40px
+    background-color: $color-blue
+    border-radius: 8px
+    
 
 .subscriptions_p-32
     margin-bottom: 32px
@@ -588,3 +625,5 @@ $color-for-background-calculation: #FFC736
     width: 289px
     margin: 0px
     margin-bottom: 8px
+
+    
