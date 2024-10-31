@@ -638,6 +638,7 @@
   justify-content: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
+  margin-bottom: 80px;
 }
 .subscriptions__items {
   text-align: left;
@@ -791,12 +792,14 @@
   align-items: center;
 }
 .reviews-flex__left-wrapper {
-  padding: 120px 20px 113px 104px;
+  padding: 120px 0px 113px 104px;
   width: 1159px;
 }
 .reviews-left {
   text-align: left;
   background-color: #357EFE;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .reviews-left__h3 {
   color: rgb(255, 255, 255);
@@ -816,6 +819,23 @@
 }
 .reviews-right__img {
   position: absolute;
-  right: 1px;
+  right: 0px;
   top: -231px;
+  border-top-right-radius: 8px;
+  width: 580px;
+  z-index: 1;
+}
+.reviews-right__right-arrow {
+  position: absolute;
+  right: 85px;
+  left: -85px;
+  top: -43.25px;
+  bottom: 2.25px;
+  z-index: 2;
+}
+.reviews-right__left-arrow {
+  position: absolute;
+  right: 1001px;
+  left: -1186px;
+  bottom: -66px;
 }/*# sourceMappingURL=style.css.map */

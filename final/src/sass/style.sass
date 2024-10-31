@@ -528,6 +528,7 @@ $color-for-background-calculation: #FFC736
     display: flex
     justify-content: center
     column-gap: 24px
+    margin-bottom: 80px
     &__items
         text-align: left
         &__h3
@@ -645,12 +646,14 @@ $color-for-background-calculation: #FFC736
         justify-content: center
         align-items: center
         &__left-wrapper
-            padding: 120px 20px 113px 104px
+            padding: 120px 0px 113px 104px
             width: 1159px
 
     &-left
         text-align: left
         background-color: $color-blue
+        border-radius: 8px
+        overflow: hidden
         &__h3
             color: rgb(255, 255, 255)
             font-size: 28px
@@ -666,5 +669,21 @@ $color-for-background-calculation: #FFC736
         position: relative
         &__img
             position: absolute
-            right: 1px
+            right: 0px
             top: -231px
+            border-top-right-radius: 8px
+            width: 580px
+            z-index: 1
+        &__right-arrow
+            position: absolute
+            right: 85px
+            left: -85px
+            top: -43.25px
+            bottom: 2.25px
+            z-index: 2 
+        &__left-arrow
+            position: absolute 
+            right: 1001px
+            left: -1186px
+            bottom: -66px
+
