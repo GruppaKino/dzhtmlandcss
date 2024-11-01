@@ -492,6 +492,7 @@
   line-height: 140%;
 }
 
+/* значение для пятой секции */ 
 .fifth-section {
   margin-bottom: 120px;
 }
@@ -514,25 +515,30 @@
   margin-bottom: 40px;
 }
 
+/* заначения для разделяющей линии между пятой (fifth-section) и шестой (sixth-section) секцией */
 .around-advantages-and-mobile-version__hr {
   margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
   width: 1392px;
+  border: 1px solid rgba(78, 93, 124, 0.0784313725);
 }
 
+/* общие значения для шестой секции */
 .sixth-section__container {
   background-color: #357EFE;
   border-radius: 16px;
 }
 
+/* значения для разделения в 2 частях, для customer-support */
 .customer-support {
   display: flex;
   align-items: center;
   gap: 74px;
+  /* левая часть customer-support */
 }
 .customer-support__right-wrapper {
-  text-align: left;
+  /* правая часть customer-support */
 }
 .customer-support__right-wrapper__h3 {
   color: rgb(255, 255, 255);
@@ -558,6 +564,7 @@
   line-height: 140%;
 }
 
+/* позиционирование для right-wrapper__icons-and-links (средняя часть - иконки) */            
 .icons-and-links__li {
   display: flex;
   align-items: center;
@@ -576,6 +583,11 @@
   line-height: 140%;
 }
 
+/* значения для седьмой части */
+/* значения для карточек tariffs */
+.tariffs {
+  /* небольшая модификация для 3 карточки (3 кнопки) */ 
+}
 .tariffs__title {
   text-align: center;
   padding-top: 80px;
@@ -633,6 +645,7 @@
   line-height: 140%;
 }
 
+/* значения flex для позиционирования карточек на сайте */
 .subscriptions {
   display: flex;
   justify-content: center;
@@ -668,6 +681,7 @@
   line-height: 120%;
 }
 
+/* модификаторы для белого цвета subscriptions_white и светло - серого цвета subscriptions_white-and-gray */
 .subscriptions_white {
   color: #FFFFFF;
 }
@@ -676,6 +690,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* задаю значение для 3000 тысяч рублей во второй карточке (желтый фон) */
 .calculation_background {
   padding: 8px 16px;
   background-color: #FFC736;
@@ -683,6 +698,7 @@
   border-radius: 8px;
 }
 
+/* значение для второй и третьей карточки, где идет концетрация внимания на выгоде, на самом вверху */
 .subscriptions-benefit {
   display: inline-block;
   background-color: #1ABC9C;
@@ -693,24 +709,28 @@
   margin-bottom: 16px;
 }
 
+/* padding для позиционирования внутри первой карточки */
 .subscriptions_padding_first {
   padding: 93px 40px 48px;
   border: 1px solid gray;
   border-radius: 8px;
 }
 
+/* padding для позиционирования внутри второй карточки */
 .subscriptions_padding_second {
   padding: 48px 40px;
   border: 1px solid gray;
   border-radius: 8px;
 }
 
+/* padding для позиционирования внутри третьей карточки */
 .subscriptions_padding_third {
   padding: 48px 38px 48px 40px;
   background-color: #357EFE;
   border-radius: 8px;
 }
 
+/* значения margin для p тегов в subscriptions */
 .subscriptions_p-32 {
   margin-bottom: 32px;
 }
@@ -719,11 +739,13 @@
   margin-bottom: 50px;
 }
 
+/* обнуление, чтобы исправить "схлопывия margin" */
 .calculation_last {
   margin: 0px;
   margin-bottom: 40px;
 }
 
+/* значения margin для p тегов в calculation для первой карточки */
 .calculation_margin28px {
   margin-right: 28px;
 }
@@ -736,6 +758,7 @@
   margin-right: 20px;
 }
 
+/* значения margin для p тегов в calculation для второй карточки */
 .calculation_margin27px {
   margin-right: 27px;
 }
@@ -748,6 +771,7 @@
   margin-right: 19px;
 }
 
+/* значения margin для p тегов в calculation для третьей карточки */
 .calculation_margin40px {
   margin-right: 40px;
 }
@@ -760,20 +784,23 @@
   margin-right: 32px;
 }
 
-.calculation__h3 {
+/* значения для разделительной линия между subscriptions__items__calculation */
+.calculation__hr {
   color: rgba(78, 93, 124, 0.0784313725);
   width: 289px;
   margin: 0px;
   margin-bottom: 16px;
 }
 
-.calculation__h3__for-calculation_background {
+/* значения для разделительной лении, как модификатор (calculation__hr), для отступа с subscriptions-benefit */ 
+.calculation__hr__for-calculation_background {
   color: rgba(78, 93, 124, 0.0784313725);
   width: 289px;
   margin: 0px;
   margin-bottom: 8px;
 }
 
+/* значения для восьмой секции (восьмая секция) */
 .eighth-section {
   margin-bottom: 80px;
 }
@@ -781,6 +808,12 @@
   overflow: hidden;
 }
 
+/* занчение для шапки восьмой секции */  
+.reviews {
+  /* значения для reviews-flex внутри решил разместить левую часть (текст отзыва ИФ и должность) и правую часть (фото девушки кто написал отзыв) */ 
+  /* левая часть reviews-flex с текстом отзыва */
+  /* значения для правой часть reviews-flex с фотографией девушки и иконками (стрелочки для переключения отзывов) */
+}
 .reviews__top-h2 {
   text-align: center;
   color: rgb(0, 0, 0);
@@ -843,6 +876,7 @@
   bottom: -66px;
 }
 
+/* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
 .footer {
   background-color: #1A1D25;
   min-height: 340px;
@@ -858,6 +892,7 @@
   margin-bottom: 38px;
 }
 
+/* значения для верхней уровень footer (документация) */
 .flex-top {
   display: flex;
   justify-content: space-between;
@@ -876,6 +911,7 @@
   color: rgba(255, 255, 255, 0.7019607843);
 }
 
+/* значения для нижнего уровеня footer (права защищены и иконки банковский карт) */   
 .all-rights-reserved {
   display: flex;
   justify-content: space-between;
