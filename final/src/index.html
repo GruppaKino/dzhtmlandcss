@@ -12,7 +12,7 @@
     <!-- первая секция с навигационным меню по странице -->
     <section class="main-section">
         <div class="container main-section__header">
-            <!-- лого компании лева от навигационного меню -->
+            <!-- лого компании слева от навигационного меню -->
             <div class="main_section__title-logo logo">
                 <img src="./img/finio.png" alt="Основное лого">
             </div>
@@ -27,6 +27,7 @@
             </nav>
             <!-- личный кабинет справа от навигационного меню -->
             <div class="main-section__personal-account personal-account">
+                <!-- кнопка личного кабинета -->
                 <button class="personal-account__button">
                     <a href="#">Личный кабинет</a>
                 </button>
@@ -64,7 +65,7 @@
     </section>
     <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
     <section class="second-section">
-        <!-- second-section__functions - этот див, как не большое продолжение первой секции, типо footer -->
+        <!-- second-section__functions - этот див, как небольшое footer для первой секции -->
         <div class="container second-section__functions">
             <div class="functions__flex functions_backgraund">
                 <div class="functions__flex__one functions_items">
@@ -157,7 +158,6 @@
     </section>
     <!-- третья секция содержит в себе: тект про экономию времени h2, p, button; накладывание фотографий друг на друга и flex сравнивая Excel и FINIO -->
     <section class="third-section">
-        <!-- вложил в container для позиционирования на сайте -->
         <div class="container third-section__time-saving">
             <!-- этот div содержит себе верхушку третьей секции -->
             <div class="third-section__title time-saving__upper-level">
@@ -183,6 +183,7 @@
             </div>
             <!-- footer третьей секции, где я делал flex сравнения Excel и FINIO -->
             <div class="third-section__flex comparison-with-excel">
+                <!-- левая часть footer, про excel -->
                 <div class="comparison-with-excel__left-wrapper">
                     <ul class="excel-and-finio">
                         <li class="excel__li">
@@ -214,6 +215,7 @@
                         </li>
                     </ul>
                 </div>
+                <!-- правая часть, про FINIO -->
                 <div class="comparison-with-excel__right-wrapper">
                     <ul class="excel-and-finio">
                         <li class="finio__li">
@@ -250,7 +252,6 @@
     </section>
     <!-- четвертая секция, не большая секция где я делал с помощью flex 3 колонки, где написаны преимушества использования технологий компании --> 
     <section class="fourth-section">
-        <!-- вложил в container для позиционирования на сайте -->
         <div class="container fourth-section__advantages">
             <div class="advantages-flex">
                 <!-- первая колонка об "надежности серверов" -->
@@ -293,6 +294,7 @@
         </div>
     </section>
     <hr class="around-advantages-and-mobile-version__hr">
+    <!-- пятая секция, где я размещал фотку компьютера и телефона (про адаптив на мобилку) -->
     <section class="fifth-section">
         <div class="container fifth-section__container">
             <div class="fifth-section__mobile-version mobile-version">
@@ -306,19 +308,25 @@
             </div>
         </div>
     </section>
+    <!-- шестая секция, про поддержку клиентов на сайте, куда обращаться -->
     <section class="sixth-section">
         <div class="container sixth-section__container">
+            <!-- разделил на 2 части, левую (фото девшуки) и правую (текст с иконками "куда обращаться") -->
             <div class="sixth-section__customer-support customer-support">
+                <!-- левая часть (фото девушки) -->
                 <div class="customer-support__left-wrapper">
                     <img src="./img/girl-in-customer-support.png" alt="Фото девушки в customer-support">
                 </div>
+                <!-- правая часть (текст и иконки) -->
                 <div class="customer-support__right-wrapper">
+                    <!-- текст про поддержку клиентов (верхняя часть) -->
                     <h3 class="customer-support__right-wrapper__h3">
                         Поддержка клиентов
                     </h3>
                     <p class="customer-support__right-wrapper__p">
                         Мы всегда готовы ответить на любые вопросы <br> в онлайн чате или по телефону
-                    </p>    
+                    </p>
+                    <!-- средняя часть, тут иконки куда общааться -->
                     <ul class="customer-support__right-wrapper__icons-and-links">
                         <li class="icons-and-links__li">
                             <img src="./icons/telegram-in-icons-and-links.png" alt="иконка телеграмма в icons-and-links" class="icons-and-links__li-img">
@@ -339,6 +347,7 @@
                             </p>
                         </li>
                     </ul>
+                    <!-- ну и нижняя часть, где говорится про перенос -->
                     <p class="customer-support__right-wrapper__footer-p">
                         Кроме того, мы готовы помочь вам с переносом <br> данных из других сервисов или Excel.
                     </p>
@@ -346,9 +355,12 @@
             </div>
         </div>
     </section>
+    <!-- седьмая секция, где я делал карточки для выбора тарифов еа сайте (стоимость, выгода и так далее) -->
     <section class="seventh-section">
         <div class="container seventh-section__container">
+            <!-- сделал общий "div" для этих карточек (tariffs) -->
             <div class="seventh-section__tariffs tariffs">
+                <!-- верхняя часть, над карточками, чтобы было понятно, что это тарифы, для удобства пользователям -->
                 <div class="tariffs__title">
                     <h3 class="tariffs__title__h3">
                         Тарифы
@@ -357,14 +369,18 @@
                         Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой
                     </p>
                 </div>
+                <!-- flex для позиционирования карточек на сайте -->
                 <div class="tariffs__flex subscriptions">
+                    <!-- первая карточка на 1 месяц, где я использовал модификаторы для padding внутри div и border для обозначения -->
                     <div class="subscriptions__items subscriptions_padding_first subscriptions_border-and-radius-standart">
                         <h3 class="subscriptions__items__h3">
                             1 месяц
                         </h3>
+                        <!-- так же я использовал отступы для некоторых тегов, чтобы отделить их друг от друга - использовал модификатор subscriptions_p... -->
                         <p class="subscriptions__items__p subscriptions_p-50">
                             Тариф подойдёт тем, кто ведёт <br> краткосрочные проекты
                         </p>
+                        <!-- отдельно выделил основную информацию о стоимости, так же использовал модификаторы для отступов calculation_margin... --> 
                         <div class="subscriptions__items__calculation">
                             <p class="subscriptions__items__calculation__p calculation_margin28px">
                                 Общая стоимость
@@ -373,6 +389,7 @@
                                 1 990 ₽
                             </p>
                         </div>
+                        <!-- разделительная линия между subscriptions__items__calculation -->
                         <hr class="calculation__h3">
                         <div class="subscriptions__items__calculation">
                             <p class="subscriptions__items__calculation__p calculation_margin72px">
@@ -392,13 +409,16 @@
                                 1 990 ₽/мес
                             </p>
                         </div>
+                        <!-- сделал кнопку для перехода к оплате --> 
                         <button class="tariffs__buttons-blue">
                             <a href="#">
                                 Бесплатно 14 дней
                             </a>
                         </button>
                     </div>
+                    <!-- 2 карточка, где дополнительно есть информация о выгоде в 25% и выделение стоимости в 3 тысячи рублей на желтом фоне -->
                     <div class="subscriptions__items subscriptions_padding_second">
+                        <!-- отдельный класс для концетрации внимания на выгоде -->
                         <p class="subscriptions-benefit">
                             Выгода 25%
                         </p>
@@ -422,6 +442,7 @@
                             <p class="subscriptions__items__calculation__p calculation_margin55px">
                                 Ваша выгода
                             </p>
+                            <!-- указал дополнительный модификатор для 3 000 р (желтый фон) -->
                             <p class="subscriptions__items__calculation__p calculation_background">
                                 3 000 ₽
                             </p>
@@ -442,6 +463,7 @@
                             </a>
                         </button>
                     </div>
+                    <!-- 3 карточка, где стоит выделить синий фон и модификаторы для белого цвета subscriptions_white и светло - серого цвета subscriptions_white-and-gray -->
                     <div class="subscriptions__items subscriptions_padding_third">
                         <p class="subscriptions-benefit">
                             Выгода 50%
@@ -480,6 +502,7 @@
                                 990 ₽/мес
                             </p>
                         </div>
+                        <!-- отдельно делал кнопку бля белого фона и синего цвета текста -->
                         <button class="tariffs__buttons-white">
                             <a href="#">
                                 Бесплатно 14 дней
@@ -490,14 +513,19 @@
             </div>
         </div>
     </section>
+    <!-- восьмая секция, небольшой блок, где разместил отзыв клиентов -->
     <section class="eighth-section">
         <div class="container eighth-section__container">
+            <!-- шапка восьмой секции -->
             <div class="eighth-section__reviews reviews">
                 <h2 class="reviews__top-h2">
                     Отзывы
                 </h2>
             </div>
+            <!-- внутри решил разместить левую часть (текст отзыва ИФ и должность) и правую часть (фото девушки кто написал отзыв) -->
+            <!-- сделал через flex для позиционирования по центру -->
             <div class="eighth-section__reviews reviews-flex">
+                <!-- левая часть reviews-flex с текстом отзыва -->
                 <div class="reviews-flex__left-wrapper reviews-left">
                     <h3 class="reviews-left__h3">
                         Впервые за долгое время <br> увидела свои расходы и <br> доходы как на ладони
@@ -507,16 +535,22 @@
                         Продавец Wildberries
                     </p>
                 </div>
+                <!-- правая часть reviews-flex с фотографией девушки и иконками (стрелочки для переключения отзывов) -->
                 <div class="reviews__end__right-wrapper reviews-right">
+                    <!-- фото девушки поверх фона --> 
                     <img src="./img/girl.png" alt="девушка в 'div'" class="reviews-right__img">
+                    <!-- фото стрелочки с курсором вправо -->
                     <img src="./icons/click-right.png" alt="стрелочка для перелистования отзывов вправо" class="reviews-right__right-arrow">
+                    <!-- фото стрелочки влево -->
                     <img src="./icons/click-left.png" alt="стрелочка для перелистования отзывов влево" class="reviews-right__left-arrow">
                 </div>
             </div>  
         </div>
     </section>
+    <!-- нижняя часть (footer) сайта, где есть переход по ресурсам на сайте (документация) -->
     <section class="footer">
         <div class="container footer__container">
+            <!-- верхний уровень footer (документация) -->
             <div class="footer__flex-top flex-top">
                 <div class="flex-top__item">
                     <img src="./icons/FINIO-icon.png" alt="лого FINIO" class="flex-top__item__img">
@@ -541,6 +575,7 @@
                     </p>
                 </div>
                 <div class="flex-top__item4">
+                    <!-- модификатор для flex-top__item4 (flex-top_white) -->
                     <p class="flex-top__item flex-top_white">
                         ИП Ларичев Антон Андреевич <br> 
                         ИНН 773373765379 <br>
@@ -551,13 +586,16 @@
                     </p>
                 </div>
             </div>
+            <!-- разделенная линиия между footer__flex-top и footer__end__all-rights-reserved -->
             <hr class="footer__hr">
+            <!-- нижний уровень footer (права защищены и иконки банковский карт) -->
             <div class="footer__end__all-rights-reserved all-rights-reserved">
                 <div class="all-rights-reserved__left">
                     <p class="all-rights-reserved__left__p">
                         © 2022 Finio. Все права защищены.
                     </p>
                 </div>
+                <!-- позиционировал иконки банковских карт через flex -->
                 <div class="all-rights-reserved__right all-rights-reserved__icons-flex">
                     <div class="icons-flex__icon">
                         <img src="./icons/visa.png" alt="иконка карты визы" class="icons-flex__icon-visa">
