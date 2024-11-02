@@ -42,9 +42,9 @@
 }
 .main-section__reg {
   position: absolute;
-  width: 110%;
+  width: 105%;
   top: 730px;
-  left: -159px;
+  left: 0px;
   height: 312px;
   background-color: #FFFFFF;
   transform: rotate(-7deg);
@@ -102,7 +102,6 @@
 /* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .right-finance__img {
   position: relative;
-  width: 100%;
   z-index: 2;
 }
 
@@ -915,14 +914,6 @@
   gap: 24px;
 }
 
-@media (max-width: 1199px) {
-  .container {
-    width: 100%;
-    width: 960px;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-}
 @media (max-width: 991px) {
   .container {
     width: 720px;
