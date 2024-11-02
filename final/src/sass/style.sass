@@ -19,7 +19,6 @@ $color-for-background-calculation: #FFC736
 
 /* общие значения для первой секции (отступы и flex-сы) */
 .main-section
-    position: relative
     background-color: #357EFE
     padding-top: 40px
     overflow: hidden
@@ -29,20 +28,22 @@ $color-for-background-calculation: #FFC736
         align-items: center
         margin-bottom: 113px
     &__text-and-logo
-        position: relative
         display: flex
         justify-content: center
         margin-bottom: 80px
-        z-index: 1
     &__finance
         margin-bottom: 40px
     &__try-for-free
         margin-bottom: 80px
         /* ниже значения для большого прямоугольника (превая секция) */
-    &__gt
+    &__reg
         position: absolute
-        bottom: -300px
-        left: -300px
+        min-width: 2312px
+        height: 312px
+        right: -300px
+        top: 550px
+        background-color: #FFFFFF
+        transform: rotate(-7.00deg)
         z-index: 0
 
 /* занчения для навигационного меню в первой секции */
@@ -85,7 +86,16 @@ $color-for-background-calculation: #FFC736
             text-decoration: none
             color: $color-blue
 /* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
-
+.computer-logo
+    position: relative
+    &__outside
+        position: relative
+        z-index: 1
+    &__inside
+        position: absolute
+        right: 125px
+        top: 36px
+        z-index: 2
 /* общие значения для второй секции (отступы) */
 .second-section
     background-color: #FFFFFF
@@ -279,6 +289,13 @@ $color-for-background-calculation: #FFC736
         position: absolute
         z-index: 2
         left: 643px
+    &__icon-left-3
+        position: absolute
+        z-index: 3
+    &__icon-right-3
+        position: absolute
+        z-index: 3
+        left: 705px
 
 /* значения для third-section__time-saving (flex) */
 .comparison-with-excel
@@ -735,20 +752,6 @@ $color-for-background-calculation: #FFC736
         align-items: center
         gap: 24px
 
-@media (max-width: 1199px )
-    .container
-        width: 960px
 
-@media (max-width: 991px )
-    .container
-        width: 720px
-
-@media (max-width: 767px )
-    .container
-        width: 540px
-
-@media (max-width: 575px )
-    .container
-        width: 100%
-
+    
     
