@@ -17,6 +17,7 @@
 
 /* общие значения для первой секции (отступы и flex-сы) */
 .main-section {
+  position: relative;
   background-color: #357EFE;
   padding-top: 40px;
   overflow: hidden;
@@ -41,10 +42,10 @@
 }
 .main-section__reg {
   position: absolute;
-  min-width: 2312px;
+  width: 110%;
+  top: 730px;
+  left: -159px;
   height: 312px;
-  right: -300px;
-  top: 550px;
   background-color: #FFFFFF;
   transform: rotate(-7deg);
   z-index: 0;
@@ -99,17 +100,9 @@
 }
 
 /* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
-.computer-logo {
+.right-finance__img {
   position: relative;
-}
-.computer-logo__outside {
-  position: relative;
-  z-index: 1;
-}
-.computer-logo__inside {
-  position: absolute;
-  right: 125px;
-  top: 36px;
+  width: 100%;
   z-index: 2;
 }
 
@@ -353,15 +346,6 @@
   z-index: 2;
   left: 643px;
 }
-.time-saving__intermediate-level__icon-left-3 {
-  position: absolute;
-  z-index: 3;
-}
-.time-saving__intermediate-level__icon-right-3 {
-  position: absolute;
-  z-index: 3;
-  left: 705px;
-}
 
 /* значения для third-section__time-saving (flex) */
 .comparison-with-excel {
@@ -519,7 +503,7 @@
   margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
-  width: 1392px;
+  min-width: 1392px;
   border: 1px solid rgba(78, 93, 124, 0.0784313725);
 }
 
@@ -929,4 +913,28 @@
   display: flex;
   align-items: center;
   gap: 24px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    width: 960px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
