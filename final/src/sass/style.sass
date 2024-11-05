@@ -27,7 +27,7 @@ $color-for-background-calculation: #FFC736
         display: flex
         justify-content: space-between
         align-items: center
-        margin-bottom: 113px
+        padding-bottom: 113px
     &__text-and-logo
         display: flex
         justify-content: center
@@ -46,7 +46,13 @@ $color-for-background-calculation: #FFC736
         background-color: #FFFFFF
         transform: rotate(-7.00deg)
         z-index: 0
+    &__finance-icons
+        &__fore
+            max-width: 334px
 
+.logo
+    &-header-finio
+        max-width: 94px
 /* занчения для навигационного меню в первой секции */
 .navigation
     &__ul
@@ -88,6 +94,7 @@ $color-for-background-calculation: #FFC736
             color: $color-blue
 /* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .right-finance__img
+    max-width: 1039px
     position: relative
     z-index: 2
 /* общие значения для второй секции (отступы) */
@@ -123,6 +130,8 @@ $color-for-background-calculation: #FFC736
 .functions_items
         font-size: 24px
         font-weight: 700
+        &__logos
+            max-width: 64px
 /* значения для первой колонки в second-section__basic-statistics (кассовые разрывы) */
 .cash-gaps
     display: flex
@@ -145,7 +154,7 @@ $color-for-background-calculation: #FFC736
             line-height: 120%
     &__right
         &__img
-            width: 729px
+            max-width: 729px
 /* значения для второй колонки в second-section__basic-statistics (Отчеты о прибыли и убытках) */
 .reports
     display: flex

@@ -10,11 +10,11 @@
 </head>
 <body>
     <!-- первая секция с навигационным меню по странице -->
-    <section class="main-section">
+    <header class="main-section">
         <div class="container main-section__header">
             <!-- лого компании слева от навигационного меню -->
             <div class="main_section__title-logo logo">
-                <img src="./img/finio.png" alt="Основное лого">
+                <a href="#"><img src="./img/finio.png" alt="Основное лого" class="logo-header-finio"></a>
             </div>
             <!-- само навигационное меню -->
             <nav class="main-section__nav navigation">
@@ -48,36 +48,36 @@
                     </button>
                 </div>
                 <div class="main-section__finance-icons">
-                    <img src="./icons/brands.png" alt="иконки брендов">
+                    <img src="./icons/brands.png" alt="иконки брендов" class="main-section__finance-icons__fore">
                 </div>
             </div>
             <!-- это правая часть среднего уровня, где картинка компьютера, и наложеный по - середине интерфейс к этой картинке -->
             <div class="main-section__right-finance right-finance">
-                <img src="./img/pc.png" alt="" class="right-finance__img">
+                <img src="./img/pc.png" alt="картинка помпьютера на главной странице" class="right-finance__img">
             </div>
         </div>
         <div class="main-section__reg reg">
         </div>
-    </section>
+    </header>
     <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
     <section class="second-section">
         <!-- second-section__functions - этот див, как небольшое footer для первой секции -->
         <div class="container second-section__functions">
             <div class="functions__flex functions_backgraund">
                 <div class="functions__flex__one functions_items">
-                    <img src="./icons/graphics.png" alt="">
+                    <img src="./icons/graphics.png" alt="иконка графика" class="functions_items__logos">
                     <p>
                         Анализ прибыли по <br> товарам и брендам
                     </p>
                 </div>
                 <div class="functions__flex__two functions_items">
-                    <img src="./icons/wb.png" alt="">
+                    <img src="./icons/wb.png" alt="" class="functions_items__logos">
                     <p>
                         Автоматический учёт <br> доходов Wildberries
                     </p>
                 </div>
                 <div class="functions__flex__three functions_items">
-                    <img src="./icons/rub.png" alt="">
+                    <img src="./icons/rub.png" alt="" class="functions_items__logos">
                     <p>
                         От 990 рублей в месяц <br> с полным функционалом
                     </p>

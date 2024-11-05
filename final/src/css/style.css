@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 113px;
+  padding-bottom: 113px;
 }
 .main-section__text-and-logo {
   display: flex;
@@ -49,6 +49,13 @@
   background-color: #FFFFFF;
   transform: rotate(-7deg);
   z-index: 0;
+}
+.main-section__finance-icons__fore {
+  max-width: 334px;
+}
+
+.logo-header-finio {
+  max-width: 94px;
 }
 
 /* занчения для навигационного меню в первой секции */
@@ -101,6 +108,7 @@
 
 /* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
 .right-finance__img {
+  max-width: 1039px;
   position: relative;
   z-index: 2;
 }
@@ -150,6 +158,9 @@
   font-size: 24px;
   font-weight: 700;
 }
+.functions_items__logos {
+  max-width: 64px;
+}
 
 /* значения для первой колонки в second-section__basic-statistics (кассовые разрывы) */
 .cash-gaps {
@@ -176,7 +187,7 @@
   line-height: 120%;
 }
 .cash-gaps__right__img {
-  width: 729px;
+  max-width: 729px;
 }
 
 /* значения для второй колонки в second-section__basic-statistics (Отчеты о прибыли и убытках) */
