@@ -11,6 +11,9 @@ $color-for-background-calculation: #FFC736
 /* импотировал шрифт Inter из google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap')
 
+html
+    outline: 1px solid red 
+
 /* задал общий контейнер для всех блоков для позиционирования на сайте */
 .container
     width: 100%
@@ -672,7 +675,6 @@ $color-for-background-calculation: #FFC736
     border: none
     margin-bottom: 16px
 
-
 /* padding для позиционирования внутри второй карточки */
 .subscriptions_padding_second
     padding: 48px 40px
@@ -722,13 +724,15 @@ $color-for-background-calculation: #FFC736
 /* значения для разделительной линия между subscriptions__items__calculation */
 .calculation__hr
     color: #4E5D7C14
-    width: 289px
+    max-width: 289px
+    width: 100%
     margin: 0px
     margin-bottom: 16px
 /* значения для разделительной лении, как модификатор (calculation__hr), для отступа с subscriptions-benefit */ 
 .calculation__hr__for-calculation_background
     color: #4E5D7C14
-    width: 289px
+    max-width: 289px
+    width: 100%
     margin: 0px
     margin-bottom: 8px
 
@@ -737,7 +741,7 @@ $color-for-background-calculation: #FFC736
     margin-bottom: 80px
     &__container
         position: relative
-        z-index: -1
+        z-index: 0
         max-width: 1156px
         width: 100%
         background-color: $color-blue
@@ -745,16 +749,18 @@ $color-for-background-calculation: #FFC736
         overflow: hidden
     &__img-index1
         position: absolute
-        max-width: 640px
         top: 0px
         left: 580px
+        z-index: 1
     &__img-index2
         position: absolute
         top: 200px
+        z-index: 2
     &__img-index3
         position: absolute
         top: 200px
         right: 0px
+        z-index: 2
 .reviews-header
     &__h2
         text-align: center
@@ -782,6 +788,7 @@ $color-for-background-calculation: #FFC736
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
 .footer
     background-color: #1A1D25
+
     padding-top: 80px
     padding-bottom: 24px
     &__hr

@@ -8,6 +8,10 @@
 }
 
 /* импотировал шрифт Inter из google fonts */
+html {
+  outline: 1px solid red;
+}
+
 /* задал общий контейнер для всех блоков для позиционирования на сайте */
 .container {
   width: 100%;
@@ -886,7 +890,8 @@
 /* значения для разделительной линия между subscriptions__items__calculation */
 .calculation__hr {
   color: rgba(78, 93, 124, 0.0784313725);
-  width: 289px;
+  max-width: 289px;
+  width: 100%;
   margin: 0px;
   margin-bottom: 16px;
 }
@@ -894,7 +899,8 @@
 /* значения для разделительной лении, как модификатор (calculation__hr), для отступа с subscriptions-benefit */ 
 .calculation__hr__for-calculation_background {
   color: rgba(78, 93, 124, 0.0784313725);
-  width: 289px;
+  max-width: 289px;
+  width: 100%;
   margin: 0px;
   margin-bottom: 8px;
 }
@@ -905,7 +911,7 @@
 }
 .eighth-section__container {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   max-width: 1156px;
   width: 100%;
   background-color: #357EFE;
@@ -914,18 +920,20 @@
 }
 .eighth-section__img-index1 {
   position: absolute;
-  max-width: 640px;
   top: 0px;
   left: 580px;
+  z-index: 1;
 }
 .eighth-section__img-index2 {
   position: absolute;
   top: 200px;
+  z-index: 2;
 }
 .eighth-section__img-index3 {
   position: absolute;
   top: 200px;
   right: 0px;
+  z-index: 2;
 }
 
 .reviews-header__h2 {
