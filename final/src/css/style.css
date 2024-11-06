@@ -37,7 +37,7 @@
   margin-bottom: 40px;
 }
 .main-section__try-for-free {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   /* ниже значения для большого прямоугольника (превая секция) */
 }
 .main-section__reg {
@@ -54,8 +54,37 @@
   max-width: 334px;
 }
 
-.logo-header-finio {
+.logo {
   max-width: 94px;
+  max-height: 27px;
+  width: 100%;
+  height: 100%;
+}
+.logo__header {
+  width: 100%;
+  height: 100%;
+}
+
+.finance-icons {
+  max-width: 334px;
+  max-height: 85px;
+  width: 100%;
+  height: 100%;
+}
+.finance-icons__logos {
+  width: 100%;
+  height: 100%;
+}
+
+.right-finance {
+  max-width: 1039px;
+  max-height: 627px;
+  width: 100%;
+  height: 100%;
+}
+.right-finance__img {
+  width: 100%;
+  height: 100%;
 }
 
 /* занчения для навигационного меню в первой секции */
@@ -170,24 +199,30 @@
 }
 .cash-gaps__left {
   text-align: left;
+  margin-right: 90px;
 }
 .cash-gaps__left__h3 {
   font-size: 40px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 24px;
-  width: 510px;
   line-height: 120%;
 }
 .cash-gaps__left__p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(78, 93, 124, 0.5019607843);
-  width: 482px;
   line-height: 120%;
 }
-.cash-gaps__right__img {
+.cash-gaps__right {
   max-width: 729px;
+  max-height: 445.5px;
+  width: 100%;
+  height: 100%;
+}
+.cash-gaps__right__img {
+  width: 100%;
+  height: 100%;
 }
 
 /* значения для второй колонки в second-section__basic-statistics (Отчеты о прибыли и убытках) */
@@ -195,10 +230,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+}
+.reports__left {
+  max-width: 644px;
+  max-height: 444px;
+  width: 100%;
+  height: 100%;
+  margin-right: 60px;
 }
 .reports__left__img {
-  width: 644px;
+  width: 100%;
+  height: 100%;
 }
 .reports__right {
   text-align: left;
@@ -208,14 +250,12 @@
   font-weight: 600;
   color: #000000;
   margin-bottom: 24px;
-  width: 571px;
   line-height: 120%;
 }
 .reports__right__p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(78, 93, 124, 0.5019607843);
-  width: 565px;
   line-height: 140%;
 }
 
@@ -224,25 +264,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;
 }
 .profit__left {
   text-align: left;
+  margin-right: 38px;
 }
 .profit__left__h3 {
   font-size: 40px;
   font-weight: 600;
   color: #000000;
   margin-bottom: 29px;
-  width: 566px;
   line-height: 120%;
 }
 .profit__left__p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(78, 93, 124, 0.5019607843);
-  width: 526px;
   line-height: 140%;
+}
+.profit__right {
+  max-width: 641px;
+  max-height: 416.7px;
+  width: 100%;
+  height: 100%;
+}
+.profit__right__img {
+  width: 100%;
+  height: 100%;
 }
 
 /* значение четвертой колонки в second-section__basic-statistics (про сокращение расходов) */
@@ -256,13 +304,18 @@
   position: relative;
 }
 .expenses__left__img-big {
-  width: 461px;
+  max-width: 461px;
+  max-height: 372.94px;
+  width: 100%;
+  height: 100%;
 }
 .expenses__left__img-small {
   position: absolute;
-  width: 450px;
-  left: 170px;
-  bottom: 145px;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  left: 160px;
+  bottom: 140px;
 }
 .expenses__right {
   text-align: left;
@@ -272,14 +325,12 @@
   font-weight: 600;
   color: #000000;
   margin-bottom: 30px;
-  width: 566px;
   line-height: 120%;
 }
 .expenses__right__p {
   font-size: 18px;
   font-weight: 500;
   color: rgba(78, 93, 124, 0.5019607843);
-  width: 566px;
   line-height: 140%;
 }
 
@@ -334,27 +385,38 @@
 
 /* значения для среднего уровня third-section__time-saving (накладывание фото друг на друга) */
 .time-saving__intermediate-level {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   position: relative;
+  max-width: 100%;
+  width: 100%;
 }
 .time-saving__intermediate-level__index-0 {
+  max-width: 1156px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 .time-saving__intermediate-level__index-1 {
   position: absolute;
-  width: 410px;
-  height: 501px;
+  max-width: 598px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
   z-index: 1;
-  left: 285px;
+  right: 679px;
 }
 .time-saving__intermediate-level__index-2 {
   position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
   z-index: 2;
-  left: 643px;
+  top: 250px;
+  right: 630px;
 }
 
 /* значения для third-section__time-saving (flex) */
@@ -427,7 +489,15 @@
   text-align: left;
 }
 .servers__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 24px;
+}
+.servers__img-servers {
+  width: 100%;
+  height: 100%;
 }
 .servers__h3 {
   color: rgb(0, 0, 0);
@@ -448,7 +518,15 @@
   text-align: left;
 }
 .encryption__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 24px;
+}
+.encryption__img-shield {
+  width: 100%;
+  height: 100%;
 }
 .encryption__h3 {
   color: rgb(0, 0, 0);
@@ -469,7 +547,15 @@
   text-align: left;
 }
 .data-protection__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
   margin-bottom: 24px;
+}
+.data-protection__img-castle {
+  width: 100%;
+  height: 100%;
 }
 .data-protection__h3 {
   color: rgb(0, 0, 0);
@@ -507,18 +593,30 @@
   line-height: 140%;
   margin-bottom: 40px;
 }
+.mobile-version__computer-and-iphone {
+  margin: 0 auto;
+  max-width: 1128px;
+  max-height: 749px;
+  width: 100%;
+  height: 100%;
+}
+.mobile-version__computer-and-iphone-img {
+  width: 100%;
+  height: 100%;
+}
 
 /* заначения для разделяющей линии между пятой (fifth-section) и шестой (sixth-section) секцией */
 .around-advantages-and-mobile-version__hr {
-  margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
-  min-width: 1392px;
+  max-width: 1392px;
   border: 1px solid rgba(78, 93, 124, 0.0784313725);
 }
 
 /* общие значения для шестой секции */
 .sixth-section__container {
+  max-width: 1392px;
+  width: 100%;
   background-color: #357EFE;
   border-radius: 16px;
 }
@@ -529,7 +627,18 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 74px;
+  /* значения для картинки девушки в customer-support */ 
   /* левая часть customer-support */
+}
+.customer-support__left-wrapper {
+  max-width: 623px;
+  max-height: 531px;
+  width: 100%;
+  height: 100%;
+}
+.customer-support__left-wrapper-img {
+  width: 100%;
+  height: 100%;
 }
 .customer-support__right-wrapper {
   /* правая часть customer-support */
@@ -649,6 +758,9 @@
 }
 .subscriptions__items {
   text-align: left;
+  padding: 93px 40px 48px;
+  border: 1px solid gray;
+  border-radius: 8px;
 }
 .subscriptions__items__h3 {
   color: rgb(0, 0, 0);
@@ -701,13 +813,6 @@
   border-radius: 8px;
   border: none;
   margin-bottom: 16px;
-}
-
-/* padding для позиционирования внутри первой карточки */
-.subscriptions_padding_first {
-  padding: 93px 40px 48px;
-  border: 1px solid gray;
-  border-radius: 8px;
 }
 
 /* padding для позиционирования внутри второй карточки */
@@ -799,6 +904,8 @@
   margin-bottom: 80px;
 }
 .eighth-section__container {
+  max-width: 1156px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -817,6 +924,7 @@
   margin-bottom: 40px;
 }
 .reviews-flex {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -826,6 +934,7 @@
   width: 1159px;
 }
 .reviews-left {
+  position: relative;
   text-align: left;
   background-color: #357EFE;
   border-radius: 8px;
@@ -845,29 +954,28 @@
   line-height: 140%;
 }
 .reviews-right {
-  position: relative;
-}
-.reviews-right__img {
   position: absolute;
-  right: 0px;
-  top: -231px;
-  border-top-right-radius: 8px;
-  width: 580px;
+  top: 0px;
+  left: 585px;
+}
+.reviews-right__zindex-1 {
   z-index: 1;
+  max-width: 640px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
 }
-.reviews-right__right-arrow {
+.reviews-right__zindex-1-img {
+  width: 100%;
+  height: 100%;
+}
+.reviews-right__zindex-2 {
   position: absolute;
-  right: 85px;
-  left: -85px;
-  top: -43.25px;
-  bottom: 2.25px;
   z-index: 2;
-}
-.reviews-right__left-arrow {
-  position: absolute;
-  right: 1001px;
-  left: -1186px;
-  bottom: -66px;
+  max-width: 40px;
+  max-height: 40px;
+  width: 100%;
+  height: 100%;
 }
 
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
@@ -923,20 +1031,4 @@
   display: flex;
   align-items: center;
   gap: 24px;
-}
-
-@media (max-width: 991px) {
-  .container {
-    width: 720px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    width: 540px;
-  }
-}
-@media (max-width: 575px) {
-  .container {
-    width: 100%;
-  }
 }/*# sourceMappingURL=style.css.map */
