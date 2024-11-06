@@ -736,34 +736,36 @@ $color-for-background-calculation: #FFC736
 .eighth-section
     margin-bottom: 80px
     &__container
+        position: relative
+        z-index: -1
         max-width: 1156px
         width: 100%
+        background-color: $color-blue
+        border-radius: 8px
         overflow: hidden
-/* занчение для шапки восьмой секции */  
-.reviews 
-    &__top-h2
+    &__img-index1
+        position: absolute
+        max-width: 640px
+        top: 0px
+        left: 580px
+    &__img-index2
+        position: absolute
+        top: 200px
+    &__img-index3
+        position: absolute
+.reviews-header
+    &__h2
         text-align: center
         color: rgb(0, 0, 0)
         font-size: 48px
         font-weight: 600
         line-height: 120%
-        margin-bottom: 40px
-    /* значения для reviews-flex внутри решил разместить левую часть (текст отзыва ИФ и должность) и правую часть (фото девушки кто написал отзыв) */ 
-    &-flex
-        position: relative
-        display: flex
-        justify-content: center
-        align-items: center
-        &__left-wrapper
-            padding: 120px 0px 113px 104px
-            width: 1159px
-    /* левая часть reviews-flex с текстом отзыва */
-    &-left
-        position: relative
+        margin-bottom: 40px 
+    
+.reviews-main
+    &__text
         text-align: left
-        background-color: $color-blue
-        border-radius: 8px
-        overflow: hidden
+        padding: 120px
         &__h3
             color: rgb(255, 255, 255)
             font-size: 28px
@@ -775,29 +777,6 @@ $color-for-background-calculation: #FFC736
             font-size: 17px
             font-weight: 700
             line-height: 140%
-    /* значения для правой часть reviews-flex с фотографией девушки и иконками (стрелочки для переключения отзывов) */
-    &-right
-        position: absolute
-        top: 0px
-        left: 585px
-        &__zindex-1
-            z-index: 1
-            max-width: 640px
-            max-height: 640px
-            width: 100%
-            height: 100%
-            &-img
-                width: 100%
-                height: 100%
-        &__zindex-2
-            position: absolute
-            z-index: 2
-            max-width: 40px
-            max-height: 40px
-            width: 100%
-            height: 100%
-
-
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
 .footer
     background-color: #1A1D25

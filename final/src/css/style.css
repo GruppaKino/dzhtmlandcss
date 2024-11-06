@@ -904,18 +904,29 @@
   margin-bottom: 80px;
 }
 .eighth-section__container {
+  position: relative;
+  z-index: -1;
   max-width: 1156px;
   width: 100%;
+  background-color: #357EFE;
+  border-radius: 8px;
   overflow: hidden;
 }
-
-/* занчение для шапки восьмой секции */  
-.reviews {
-  /* значения для reviews-flex внутри решил разместить левую часть (текст отзыва ИФ и должность) и правую часть (фото девушки кто написал отзыв) */ 
-  /* левая часть reviews-flex с текстом отзыва */
-  /* значения для правой часть reviews-flex с фотографией девушки и иконками (стрелочки для переключения отзывов) */
+.eighth-section__img-index1 {
+  position: absolute;
+  max-width: 640px;
+  top: 0px;
+  left: 580px;
 }
-.reviews__top-h2 {
+.eighth-section__img-index2 {
+  position: absolute;
+  top: 200px;
+}
+.eighth-section__img-index3 {
+  position: absolute;
+}
+
+.reviews-header__h2 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 48px;
@@ -923,59 +934,23 @@
   line-height: 120%;
   margin-bottom: 40px;
 }
-.reviews-flex {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.reviews-flex__left-wrapper {
-  padding: 120px 0px 113px 104px;
-  width: 1159px;
-}
-.reviews-left {
-  position: relative;
+
+.reviews-main__text {
   text-align: left;
-  background-color: #357EFE;
-  border-radius: 8px;
-  overflow: hidden;
+  padding: 120px;
 }
-.reviews-left__h3 {
+.reviews-main__text__h3 {
   color: rgb(255, 255, 255);
   font-size: 28px;
   font-weight: 700;
   line-height: 140%;
   margin-bottom: 64px;
 }
-.reviews-left__p {
+.reviews-main__text__p {
   color: rgb(255, 255, 255);
   font-size: 17px;
   font-weight: 700;
   line-height: 140%;
-}
-.reviews-right {
-  position: absolute;
-  top: 0px;
-  left: 585px;
-}
-.reviews-right__zindex-1 {
-  z-index: 1;
-  max-width: 640px;
-  max-height: 640px;
-  width: 100%;
-  height: 100%;
-}
-.reviews-right__zindex-1-img {
-  width: 100%;
-  height: 100%;
-}
-.reviews-right__zindex-2 {
-  position: absolute;
-  z-index: 2;
-  max-width: 40px;
-  max-height: 40px;
-  width: 100%;
-  height: 100%;
 }
 
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */

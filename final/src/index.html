@@ -512,40 +512,25 @@
     </section>
     <!-- восьмая секция, небольшой блок, где разместил отзыв клиентов -->
     <section class="eighth-section">
+        <div class="eighth-section__reviews-header reviews-header">
+            <h2 class="reviews-header__h2">
+                Отзывы
+            </h2>
+        </div>
         <div class="container eighth-section__container">
-            <!-- шапка восьмой секции -->
-            <div class="eighth-section__reviews reviews">
-                <h2 class="reviews__top-h2">
-                    Отзывы
-                </h2>
-            </div>
-            <!-- внутри решил разместить левую часть (текст отзыва ИФ и должность) и правую часть (фото девушки кто написал отзыв) -->
-            <!-- сделал через flex для позиционирования по центру -->
-            <div class="eighth-section__reviews reviews-flex">
-                <!-- левая часть reviews-flex с текстом отзыва -->
-                <div class="reviews-flex__left-wrapper reviews-left">
-                    <h3 class="reviews-left__h3">
+            <div class="eighth-section__reviews reviews-main">
+                <div class="reviews-main__text">
+                    <h3 class="reviews-main__text__h3">
                         Впервые за долгое время <br> увидела свои расходы и <br> доходы как на ладони
                     </h3>
-                    <p class="reviews-left__p">
+                    <p class="reviews-main__text__p">
                         Дана Валеева <br>
                         Продавец Wildberries
                     </p>
                 </div>
-                <!-- правая часть reviews-flex с фотографией девушки и иконками (стрелочки для переключения отзывов) -->
-                <div class="reviews__end__right-wrapper reviews-right">
-                    <!-- фото девушки поверх фона -->
-                     <div class="reviews-right__zindex-1">
-                        <img src="./img/girl.png" alt="фото девушки" class="reviews-right__zindex-1-img">
-                     </div>
-                     <div class="reviews-right__zindex-2">
-                        <img src="./icons/click-left.png" alt="иконка свайпа отзывов" class="reviews-right__zindex-2-img">
-                     </div>
-                     <div class="">
-
-                     </div>
-                </div>
-            </div>  
+            </div>
+            <img src="./img/girl.png" alt="" class="eighth-section__img-index1">
+            <img src="./icons/click-left.png" alt="" class="eighth-section__img-index2">
         </div>
     </section>
     <!-- нижняя часть (footer) сайта, где есть переход по ресурсам на сайте (документация) -->
