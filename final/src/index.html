@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- первая секция с навигационным меню по странице -->
-    <header class="main-section">
-        <div class="container main-section__header">
+    <!-- первая секция с навигационным меню по странице -->    
+    <div class="main-section">
+        <header class="container main-section__header">
             <!-- лого компании слева от навигационного меню -->
             <div class="main_section__title-logo logo">
                 <a href="#"><img src="./img/finio.png" alt="лого FINIO для header" class="logo__header"></a>
@@ -32,9 +32,9 @@
                     <a href="#">Личный кабинет</a>
                 </button>
             </div>
-        </div>
+        </header>
         <!-- вторая часть первой секции, где слева текст с h1 и иконками компаний, а справа img компьютера-->
-        <div class="container main-section__text-and-logo">
+        <section class="container main-section__text-and-logo">
             <!-- это левая часть среднего уровня, где h1 и иконки -->
             <div class="main-section__left-finance left-finance">
                 <div class="main-section__finance finance-text">
@@ -55,10 +55,10 @@
             <div class="main-section__right-finance right-finance">
                 <img src="./img/pc.png" alt="большое лого компьютера в header" class="right-finance__img">
             </div>
-        </div>
+        </section>
         <div class="main-section__reg reg">
         </div>
-    </header>
+    </div>
     <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
     <section class="second-section">
         <!-- second-section__functions - этот див, как небольшое footer для первой секции -->
