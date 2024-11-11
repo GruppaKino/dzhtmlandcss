@@ -277,6 +277,8 @@ html
 
 /* разделительная линия между колонками в basic-statistics */
 .basic-statistics__hr
+    max-width: 1392px
+    width: 100%
     margin: 0px
     margin-bottom: 80px
     color: $color-for-statistics
@@ -318,8 +320,8 @@ html
 
 /* значения для среднего уровня third-section__time-saving (накладывание фото друг на друга) */
 .time-saving__intermediate-level
-    text-align: center
     position: relative
+    text-align: center
     max-width: 100%
     width: 100%
     &__index-0
@@ -330,23 +332,32 @@ html
         z-index: 0
         border-bottom-left-radius: 10px
         border-bottom-right-radius: 10px
-    &__index-1
+    &__dop
         position: absolute
+        bottom: 0px
+        top: 0px
+        left: 115px
         max-width: 598px
         max-height: 640px
         width: 100%
         height: 100%
-        z-index: 1
-        right: 679px
-    &__index-2
+        &__index-1
+            width: 100%
+            height: 100%
+            z-index: 1
+    &__gop
         position: absolute
         max-width: 100px
         max-height: 100px
         width: 100%
         height: 100%
-        z-index: 2
+        bottom: 0px
+        left: 664px
         top: 250px
-        right: 630px
+        &__index-2
+            width: 100%
+            height: 100%
+            z-index: 2
 /* значения для third-section__time-saving (flex) */
 .comparison-with-excel
     display: flex
@@ -832,6 +843,120 @@ html
 @media (max-width: 1199px )
     .container
         width: 960px
+    .main-section__reg
+        top: 564px
+    .try-for-free__button
+        padding: 10px 18px
+    .finance-text__h2
+        font-size: 30px
+    .main-section__header
+        padding-bottom: 80px
+
+    .second-section__basic-statistics 
+        margin-bottom: 80px
+    .second-section__functions
+        margin-bottom: 130px
+
+    .functions_items
+        font-size: 20px
+    .cash-gaps__left__h3
+        font-size: 30px
+    .cash-gaps__left__p
+        font-size: 14px
+    .reports__right__h3
+        font-size: 30px
+    .reports__right__p
+        font-size: 14px
+    .profit__left__h3
+        font-size: 30px
+    .profit__left__p
+        font-size: 14px
+    .expenses__right__h3
+        font-size: 30px
+    .expenses__right__p
+        font-size: 14px
+    
+    .expenses__left__img-small
+        left: 134px
+        bottom: 121px
+
+    .time-saving__upper-level
+        padding-top: 90px
+    .time-saving__upper-level__h3
+        font-size: 38px
+    .time-saving__upper-level__p
+        font-size: 14px
+    .time-saving__upper-level__button
+        padding: 10px 30px
+    .time-saving__intermediate-level__dop
+        max-width: 493px
+        left: 0px
+    .time-saving__intermediate-level__gop
+        left: 443px
+
+    .fourth-section
+        padding-top: 90px
+    .servers__h3
+        font-size: 28px
+    .servers__p
+        font-size: 15px
+    .encryption__h3
+        font-size: 28px
+    .encryption__p
+        font-size: 15px
+    .data-protection__h3
+        font-size: 28px
+    .data-protection__p
+        font-size: 15px
+    
+    .mobile-version__h3
+        font-size: 40px
+    .mobile-version__p
+        font-size: 15px
+
+    .customer-support__right-wrapper__h3
+        font-size: 35px
+    .customer-support__right-wrapper__p
+        font-size: 15px
+    .customer-support__right-wrapper__footer-p
+        font-size: 15px
+
+    .tariffs__title__h3
+        font-size: 44px
+    .tariffs__title__p
+        font-size: 15px    
+
+    .subscriptions__items__h3
+        font-size: 28px
+    .subscriptions__items__p
+        font-size: 15px
+    .subscriptions__items__calculation__p
+        font-size: 15px
+    .tariffs__buttons-blue a
+        font-size: 15px
+    .tariffs__buttons-white a
+        font-size: 15px
+    .calculation_background
+        padding: 6px
+    
+    .reviews-header__h2
+        font-size: 44px
+    .eighth-section__img-index1
+        left: 490px
+    .reviews-main__text__h3
+        font-size: 24px
+    .reviews-main__text__p
+        font-size: 15px
+
+    .footer
+        padding-top: 70px
+        padding-bottom: 20px
+    .flex-top
+        gap: 20px
+    .flex-top__item
+        font-size: 15px
+    .all-rights-reserved__left__p
+        font-size: 15px
 
 @media (max-width: 991px )
     .container
