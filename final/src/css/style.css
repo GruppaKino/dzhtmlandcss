@@ -926,32 +926,22 @@ html {
 }
 .eighth-section__container {
   position: relative;
-  z-index: 0;
+  margin: 0 auto;
   max-width: 1156px;
+  max-height: 438px;
   width: 100%;
-  background-color: #357EFE;
-  border-radius: 8px;
+  height: 100%;
+  background: #357EFE;
   overflow: hidden;
+  z-index: 0;
 }
-.eighth-section__img-index1 {
+.eighth-section__container-left {
   position: absolute;
-  max-width: 640px;
-  max-height: 640px;
+  max-width: 40px;
+  max-height: 40px;
   width: 100%;
-  top: 0px;
-  left: 580px;
-  z-index: 1;
-}
-.eighth-section__img-index2 {
-  position: absolute;
-  top: 200px;
-  z-index: 2;
-}
-.eighth-section__img-index3 {
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  z-index: 2;
+  height: 100%;
+  z-index: 30;
 }
 
 .reviews-header__h2 {
@@ -963,22 +953,42 @@ html {
   margin-bottom: 40px;
 }
 
+.reviews-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .reviews-main__text {
   text-align: left;
-  padding: 120px;
+  padding-left: 104px;
+  padding-bottom: 200px;
 }
 .reviews-main__text__h3 {
-  color: rgb(255, 255, 255);
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 140%;
-  margin-bottom: 64px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
 }
 .reviews-main__text__p {
-  color: rgb(255, 255, 255);
   font-size: 17px;
   font-weight: 700;
   line-height: 140%;
+  color: #FFFFFF;
+}
+
+.reviews-main__imgs {
+  position: relative;
+  left: 57px;
+  max-width: 640px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+.reviews-main__imgs-index1 {
+  width: 100%;
+  height: 100%;
 }
 
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
@@ -1477,6 +1487,9 @@ html {
   }
   .flex-top__item {
     font-size: 13px;
+  }
+  .reviews-main {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 575px) {
