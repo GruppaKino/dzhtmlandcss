@@ -935,14 +935,6 @@ html {
   overflow: hidden;
   z-index: 0;
 }
-.eighth-section__container-left {
-  position: absolute;
-  max-width: 40px;
-  max-height: 40px;
-  width: 100%;
-  height: 100%;
-  z-index: 30;
-}
 
 .reviews-header__h2 {
   text-align: center;
@@ -987,6 +979,27 @@ html {
   height: 100%;
 }
 .reviews-main__imgs-index1 {
+  width: 100%;
+  height: 100%;
+}
+
+.eighth-section__imgs-index2 {
+  position: absolute;
+  max-width: 104px;
+  max-height: 104px;
+  width: 100%;
+  height: 100%;
+  top: 182px;
+  z-index: 1;
+}
+
+.eighth-section__imgs-index3 {
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 187px;
+  max-width: 104px;
+  max-height: 104px;
   width: 100%;
   height: 100%;
 }
