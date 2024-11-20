@@ -1497,14 +1497,14 @@ html {
 }
 @media (max-width: 575px) {
   .container {
-    width: 100%;
+    width: 320px;
   }
   .main-section__reg {
     top: 474px;
   }
   .expenses__left__img-small {
-    max-width: 156px;
-    left: 173px;
+    max-width: 143px;
+    left: 180px;
     bottom: 104px;
   }
   .time-saving__intermediate-level__dop {
@@ -1514,7 +1514,31 @@ html {
     left: 115px;
     top: 54px;
   }
+  .comparison-with-excel {
+    flex-wrap: wrap;
+  }
+  .comparison-with-excel__left-wrapper {
+    margin: 0px;
+    margin-bottom: 48px;
+  }
   .reviews-container {
     flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .reviews-container__right {
+    left: 0px;
+    bottom: 24px;
+  }
+  .flex-top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .all-rights-reserved {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .all-rights-reserved__icons-flex {
+    margin-bottom: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
