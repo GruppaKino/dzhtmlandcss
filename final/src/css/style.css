@@ -921,6 +921,70 @@ html {
 }
 
 /* значения для восьмой секции (восьмая секция) */
+.reviews-header {
+  text-align: center;
+}
+.reviews-header__h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+
+.reviews-container {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1156px;
+  max-height: 438px;
+  width: 100%;
+  height: auto;
+  background-color: #357EFE;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.reviews-container__left {
+  text-align: left;
+  padding: 20px;
+}
+.reviews-container__left__first {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.reviews-container__left__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.reviews-container__left__wb {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.reviews-container__right {
+  flex: 1;
+  position: relative;
+  left: 118px;
+  max-width: 640px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+.reviews-container__right__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
 .footer {
   background-color: #1A1D25;
@@ -1108,17 +1172,8 @@ html {
   .calculation_background {
     padding: 6px;
   }
-  .reviews-header__h2 {
-    font-size: 44px;
-  }
-  .eighth-section__img-index1 {
-    left: 490px;
-  }
-  .reviews-main__text__h3 {
-    font-size: 24px;
-  }
-  .reviews-main__text__p {
-    font-size: 15px;
+  .reviews-container__right {
+    left: 86px;
   }
   .footer {
     padding-top: 70px;
@@ -1204,8 +1259,17 @@ html {
   .subscriptions__items:last-child {
     margin: 0px;
   }
-  .reviews-main__text {
-    padding-left: 48px;
+  .reviews-container__left__first {
+    font-size: 24px;
+  }
+  .reviews-container__left__name {
+    font-size: 15px;
+  }
+  .reviews-container__left__wb {
+    font-size: 15px;
+  }
+  .reviews-container__right {
+    left: 13px;
   }
   .eighth-section__img-index1 {
     max-width: 446px;
@@ -1411,6 +1475,18 @@ html {
   .expenses__left__img-small {
     max-width: 280px;
     left: 224px;
+  }
+  .reviews-container__left {
+    padding: 10px;
+  }
+  .reviews-container__left__first {
+    font-size: 20px;
+  }
+  .reviews-container__left__name {
+    font-size: 14px;
+  }
+  .reviews-container__left__wb {
+    font-size: 14px;
   }
   .flex-top {
     gap: 11px;
