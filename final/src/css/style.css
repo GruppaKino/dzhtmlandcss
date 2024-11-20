@@ -1499,4 +1499,22 @@ html {
   .container {
     width: 100%;
   }
+  .main-section__reg {
+    top: 474px;
+  }
+  .expenses__left__img-small {
+    max-width: 156px;
+    left: 173px;
+    bottom: 104px;
+  }
+  .time-saving__intermediate-level__dop {
+    max-width: 163px;
+  }
+  .time-saving__intermediate-level__gop {
+    left: 115px;
+    top: 54px;
+  }
+  .reviews-container {
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */
