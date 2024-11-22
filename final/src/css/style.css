@@ -35,7 +35,7 @@ html {
 .main-section__text-and-logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .main-section__finance {
   margin-bottom: 40px;
@@ -727,13 +727,7 @@ html {
   line-height: 120%;
   color: rgba(78, 93, 124, 0.5019607843);
 }
-.tariffs__buttons-blue {
-  padding: 12px 63px;
-  border-radius: 47px;
-  background-color: #357EFE;
-  border: none;
-}
-.tariffs__buttons-blue a {
+.tariffs__title a {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 17px;
@@ -775,31 +769,64 @@ html {
        column-gap: 24px;
   margin-bottom: 80px;
 }
-.subscriptions__items {
+.subscriptions__button {
+  padding: 12px 63px;
+  border-radius: 47px;
+  border: none;
+}
+.subscriptions__button a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+.subscriptions__button--blue {
+  background-color: #357EFE;
+}
+.subscriptions__button--white {
+  background-color: #FFFFFF;
+}
+.subscriptions__button--white a {
+  color: #357EFE;
+}
+.subscriptions__card {
   text-align: left;
-  padding: 93px 40px 48px;
   border: 1px solid gray;
   border-radius: 8px;
 }
-.subscriptions__items__h3 {
+.subscriptions__card--one-month {
+  padding: 93px 40px 48px;
+}
+.subscriptions__card--six-months {
+  padding: 48px 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.subscriptions__card--twelve-months {
+  padding: 48px 38px 48px 40px;
+  background-color: #357EFE;
+  border-radius: 8px;
+}
+.subscriptions__card__h3 {
   color: rgb(0, 0, 0);
   font-size: 32px;
   font-weight: 800;
   line-height: 120%;
   margin-bottom: 16px;
 }
-.subscriptions__items__p {
+.subscriptions__card__p {
   color: rgba(78, 93, 124, 0.5019607843);
   font-size: 17px;
   font-weight: 500;
   line-height: 140%;
 }
-.subscriptions__items__calculation {
+.subscriptions__card__calculation {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
-.subscriptions__items__calculation__p {
+.subscriptions__card__calculation__p {
   color: #4E5D7C;
   font-size: 17px;
   font-weight: 500;
@@ -832,20 +859,6 @@ html {
   border-radius: 8px;
   border: none;
   margin-bottom: 16px;
-}
-
-/* padding для позиционирования внутри второй карточки */
-.subscriptions_padding_second {
-  padding: 48px 40px;
-  border: 1px solid gray;
-  border-radius: 8px;
-}
-
-/* padding для позиционирования внутри третьей карточки */
-.subscriptions_padding_third {
-  padding: 48px 38px 48px 40px;
-  background-color: #357EFE;
-  border-radius: 8px;
 }
 
 /* значения margin для p тегов в subscriptions */
@@ -1040,6 +1053,25 @@ html {
   gap: 24px;
 }
 
+.icons-flex__icon {
+  max-width: 79px;
+  max-height: 28px;
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-visa {
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-maxter-card {
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-world {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 960px;
@@ -1154,23 +1186,26 @@ html {
   .tariffs__title__p {
     font-size: 15px;
   }
-  .subscriptions__items__h3 {
+  .subscriptions__card__h3 {
     font-size: 28px;
   }
-  .subscriptions__items__p {
+  .subscriptions__card__p {
     font-size: 15px;
   }
-  .subscriptions__items__calculation__p {
+  .subscriptions__card__calculation__p {
     font-size: 15px;
   }
-  .tariffs__buttons-blue a {
-    font-size: 15px;
+  .subscriptions__button {
+    padding: 15px 28px;
   }
-  .tariffs__buttons-white a {
+  .subscriptions__button a {
     font-size: 15px;
   }
   .calculation_background {
     padding: 6px;
+  }
+  .subscriptions__card__calculation__p {
+    font-size: 12px;
   }
   .reviews-container__right {
     left: 86px;
@@ -1252,6 +1287,7 @@ html {
   }
   .subscriptions {
     flex-wrap: wrap;
+    gap: 20px;
   }
   .subscriptions__items {
     margin-bottom: 20px;
@@ -1488,6 +1524,9 @@ html {
   .reviews-container__left__wb {
     font-size: 14px;
   }
+  .subscriptions__card__calculation__p {
+    font-size: 15px;
+  }
   .flex-top {
     gap: 11px;
   }
@@ -1528,6 +1567,12 @@ html {
   .reviews-container__right {
     left: 0px;
     bottom: 24px;
+  }
+  .subscriptions__button {
+    padding: 6px 48px;
+  }
+  .subscriptions__button a {
+    font-size: 16px;
   }
   .flex-top {
     flex-wrap: wrap;

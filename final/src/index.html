@@ -10,8 +10,8 @@
 </head>
 <body>
     <!-- первая секция с навигационным меню по странице -->    
-    <div class="main-section">
-        <header class="container main-section__header">
+    <header class="main-section">
+        <div class="container main-section__header">
             <!-- лого компании слева от навигационного меню -->
             <div class="main_section__title-logo logo">
                 <a href="#"><img src="./img/finio.png" alt="лого FINIO для header" class="logo__header"></a>
@@ -37,7 +37,7 @@
                     <a href="#">Личный кабинет</a>
                 </button>
             </div>
-        </header>
+        </div>
         <!-- вторая часть первой секции, где слева текст с h1 и иконками компаний, а справа img компьютера-->
         <section class="container main-section__text-and-logo">
             <!-- это левая часть среднего уровня, где h1 и иконки -->
@@ -63,7 +63,7 @@
         </section>
         <div class="main-section__reg reg">
         </div>
-    </div>
+    </header>
     <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
     <section class="second-section">
         <!-- second-section__functions - этот див, как небольшое footer для первой секции -->
@@ -378,139 +378,139 @@
                 <!-- flex для позиционирования карточек на сайте -->
                 <div class="tariffs__flex subscriptions">
                     <!-- первая карточка на 1 месяц, где я использовал модификаторы для padding внутри div и border для обозначения -->
-                    <div class="subscriptions__items">
-                        <h3 class="subscriptions__items__h3">
+                    <div class="subscriptions__card subscriptions__card--one-month">
+                        <h3 class="subscriptions__card__h3">
                             1 месяц
                         </h3>
                         <!-- так же я использовал отступы для некоторых тегов, чтобы отделить их друг от друга - использовал модификатор subscriptions_m... -->
-                        <p class="subscriptions__items__p subscriptions_p-50">
+                        <p class="subscriptions__card__p subscriptions_p-50">
                             Тариф подойдёт тем, кто ведёт <br> краткосрочные проекты
                         </p>
                         <!-- отдельно выделил основную информацию о стоимости, так же использовал модификаторы для отступов calculation_margin... --> 
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p calculation_margin28px">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin28px">
                                 Общая стоимость
                             </p>
-                            <p class="subscriptions__items__calculation__p">
+                            <p class="subscriptions__card__calculation__p">
                                 1 990 ₽
                             </p>
                         </div>
                         <!-- разделительная линия между subscriptions__items__calculation -->
                         <hr class="calculation__hr">
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p calculation_margin72px">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin72px">
                                 Ваша выгода
                             </p>
-                            <p class="subscriptions__items__calculation__p">
+                            <p class="subscriptions__card__calculation__p">
                                 0 ₽
                             </p>
                         </div>
                         <hr class="calculation__hr">
-                        <div class="subscriptions__items__calculation calculation_last">
-                            <p class="subscriptions__items__calculation__p
+                        <div class="subscriptions__card__calculation calculation_last">
+                            <p class="subscriptions__card__calculation__p
                             calculation_margin20px">
                                 Стоимость месяца
                             </p>
-                            <p class="subscriptions__items__calculation__p">
+                            <p class="subscriptions__card__calculation__p">
                                 1 990 ₽/мес
                             </p>
                         </div>
                         <!-- сделал кнопку для перехода к оплате --> 
-                        <button class="tariffs__buttons-blue">
+                        <button class="subscriptions__button subscriptions__button--blue">
                             <a href="#">
                                 Бесплатно 14 дней
                             </a>
                         </button>
                     </div>
                     <!-- 2 карточка, где дополнительно есть информация о выгоде в 25% и выделение стоимости в 3 тысячи рублей на желтом фоне -->
-                    <div class="subscriptions__items subscriptions_padding_second">
+                    <div class="subscriptions__card subscriptions__card--six-months">
                         <!-- отдельный класс для концетрации внимания на выгоде -->
                         <p class="subscriptions-benefit">
                             Выгода 25%
                         </p>
-                        <h3 class="subscriptions__items__h3 ">
+                        <h3 class="subscriptions__card__h3 ">
                             6 месяцев
                         </h3>
-                        <p class="subscriptions__items__p subscriptions_p-50">
+                        <p class="subscriptions__card__p subscriptions_p-50">
                             Тариф подойдёт для тех, кто <br> уверенно ведёт финансовый учёт
                         </p>
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p
                             calculation_margin27px">
                                 Общая стоимость
                             </p>
-                            <p class="subscriptions__items__calculation__p">
+                            <p class="subscriptions__card__calculation__p">
                                 8 940 ₽
                             </p>
                         </div>
                         <hr class="calculation__hr__for-calculation_background">
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p calculation_margin55px">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin55px">
                                 Ваша выгода
                             </p>
                             <!-- указал дополнительный модификатор для 3 000 р (желтый фон) -->
-                            <p class="subscriptions__items__calculation__p calculation_background">
+                            <p class="subscriptions__card__calculation__p calculation_background">
                                 3 000 ₽
                             </p>
                         </div>
                         <hr class="calculation__hr">
-                        <div class="subscriptions__items__calculation calculation_last">
-                            <p class="subscriptions__items__calculation__p
+                        <div class="subscriptions__card__calculation calculation_last">
+                            <p class="subscriptions__card__calculation__p
                             calculation_margin19px">
                                 Стоимость месяца
                             </p>
-                            <p class="subscriptions__items__calculation__p">
+                            <p class="subscriptions__card__calculation__p">
                                 1 490 ₽/мес
                             </p>
                         </div>
-                        <button class="tariffs__buttons-blue">
+                        <button class="subscriptions__button subscriptions__button--blue">
                             <a href="#">
                                 Бесплатно 14 дней
                             </a>
                         </button>
                     </div>
                     <!-- 3 карточка, где стоит выделить синий фон и модификаторы для белого цвета subscriptions_white и светло - серого цвета subscriptions_white-and-gray -->
-                    <div class="subscriptions__items subscriptions_padding_third">
+                    <div class="subscriptions__card subscriptions__card--twelve-months">
                         <p class="subscriptions-benefit">
                             Выгода 50%
                         </p>
-                        <h3 class="subscriptions__items__h3 subscriptions_white">
+                        <h3 class="subscriptions__card__h3 subscriptions_white">
                             12 месяцев
                         </h3>
-                        <p class="subscriptions__items__p subscriptions_p-32 .subscriptions_white-and-gray">
+                        <p class="subscriptions__card__p subscriptions_p-32 .subscriptions_white-and-gray">
                             Тариф подойдёт для тех, кто <br> уверенно ведёт финансовый учёт <br> и хочет сэкономить
                         </p>
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p
                             calculation_margin40px subscriptions_white">
                                 Общая стоимость
                             </p>
-                            <p class="subscriptions__items__calculation__p subscriptions_white">
+                            <p class="subscriptions__card__calculation__p subscriptions_white">
                                 11 880 ₽
                             </p>
                         </div>
                         <hr class="calculation__hr__for-calculation_background">
-                        <div class="subscriptions__items__calculation">
-                            <p class="subscriptions__items__calculation__p calculation_margin67px subscriptions_white">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin67px subscriptions_white">
                                 Ваша выгода
                             </p>    
-                            <p class="subscriptions__items__calculation__p
+                            <p class="subscriptions__card__calculation__p
                             calculation_background">
                                 12 000 ₽
                             </p>
                         </div>
                         <!-- разделительная линия между subscriptions__items__calculation --> 
                         <hr class="calculation__hr">
-                        <div class="subscriptions__items__calculation calculation_white calculation_last">
-                            <p class="subscriptions__items__calculation__p calculation_margin32px subscriptions_white">
+                        <div class="subscriptions__card__calculation calculation_white calculation_last">
+                            <p class="subscriptions__card__calculation__p calculation_margin32px subscriptions_white">
                                 Стоимость месяца
                             </p>
-                            <p class="subscriptions__items__calculation__p subscriptions_white">
+                            <p class="subscriptions__card__calculation__p subscriptions_white">
                                 990 ₽/мес
                             </p>
                         </div>
                         <!-- отдельно делал кнопку бля белого фона и синего цвета текста -->
-                        <button class="tariffs__buttons-white">
+                        <button class="subscriptions__button subscriptions__button--white">
                             <a href="#">
                                 Бесплатно 14 дней
                             </a>

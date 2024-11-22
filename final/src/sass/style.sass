@@ -34,7 +34,7 @@ html
     &__text-and-logo
         display: flex
         justify-content: center
-        margin-bottom: 80px
+        padding-bottom: 80px
     &__finance
         margin-bottom: 40px
     &__try-for-free
@@ -596,11 +596,6 @@ html
             font-size: 17px
             line-height: 120%
             color: #4E5D7C80
-    &__buttons-blue
-        padding: 12px 63px
-        border-radius: 47px
-        background-color: $color-blue
-        border: none
         & a 
             color: #FFFFFF
             text-decoration: none
@@ -638,11 +633,36 @@ html
     justify-content: center
     column-gap: 24px
     margin-bottom: 80px
-    &__items
-        text-align: left
-        padding: 93px 40px 48px 
+    &__button
+        padding: 12px 63px
+        border-radius: 47px
+        border: none
+        & a 
+            color: #FFFFFF
+            text-decoration: none
+            font-size: 17px
+            font-weight: 800
+            line-height: 140%
+        &--blue
+            background-color: $color-blue
+        &--white
+            background-color: #FFFFFF
+            & a 
+                color: $color-blue
+    &__card
+        text-align: left 
         border: 1px solid gray
         border-radius: 8px
+        &--one-month
+            padding: 93px 40px 48px
+        &--six-months
+            padding: 48px 40px
+            border: 1px solid gray
+            border-radius: 8px
+        &--twelve-months
+            padding: 48px 38px 48px 40px
+            background-color: $color-blue
+            border-radius: 8px
         &__h3
             color: rgb(0, 0, 0)
             font-size: 32px
@@ -686,17 +706,6 @@ html
     border-radius: 8px
     border: none
     margin-bottom: 16px
-
-/* padding для позиционирования внутри второй карточки */
-.subscriptions_padding_second
-    padding: 48px 40px
-    border: 1px solid gray
-    border-radius: 8px
-/* padding для позиционирования внутри третьей карточки */
-.subscriptions_padding_third
-    padding: 48px 38px 48px 40px
-    background-color: $color-blue
-    border-radius: 8px
     
 /* значения margin для p тегов в subscriptions */
 .subscriptions_p-32
@@ -843,6 +852,20 @@ html
         display: flex
         align-items: center
         gap: 24px
+.icons-flex__icon
+    max-width: 79px
+    max-height: 28px
+    width: 100%
+    height: 100%
+    &-visa
+        width: 100%
+        height: 100%
+    &-maxter-card
+        width: 100%
+        height: 100%
+    &-world
+        width: 100%
+        height: 100%
 
 @media (max-width: 1199px )
     .container
@@ -930,23 +953,24 @@ html
     .tariffs__title__p
         font-size: 15px    
 
-    .subscriptions__items__h3
+    .subscriptions__card__h3
         font-size: 28px
-    .subscriptions__items__p
+    .subscriptions__card__p
         font-size: 15px
-    .subscriptions__items__calculation__p
+    .subscriptions__card__calculation__p
         font-size: 15px
-    .tariffs__buttons-blue a
-        font-size: 15px
-    .tariffs__buttons-white a
-        font-size: 15px
+    .subscriptions__button
+        padding: 15px 28px
+        & a
+            font-size: 15px
     .calculation_background
         padding: 6px
+    .subscriptions__card__calculation__p 
+        font-size: 12px
 
     .reviews-container__right
         left: 86px
     
-
 
     .footer
         padding-top: 70px
@@ -1002,6 +1026,7 @@ html
         margin-bottom: 35px
     .subscriptions
         flex-wrap: wrap
+        gap: 20px
     .subscriptions__items
         margin-bottom: 20px
         &:last-child
@@ -1183,6 +1208,9 @@ html
         font-size: 14px
     .reviews-container__left__wb
         font-size: 14px
+    
+    .subscriptions__card__calculation__p 
+        font-size: 15px
 
     .flex-top 
         gap: 11px
@@ -1215,6 +1243,11 @@ html
     .reviews-container__right 
         left: 0px
         bottom: 24px
+    .subscriptions__button 
+        padding: 6px 48px
+        & a
+            font-size: 16px
+    
     .flex-top
         flex-wrap: wrap
         justify-content: flex-start
