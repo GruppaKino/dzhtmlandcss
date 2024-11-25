@@ -1,0 +1,1589 @@
+@charset "UTF-8";
+/* задали цвета, которые используются слишком часто */
+/* задал общие значения для сайта, шрифт и как должны позиционироваться блоки на сайте */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+/* импотировал шрифт Inter из google fonts */
+html {
+  outline: 1px solid red;
+}
+
+/* задал общий контейнер для всех блоков для позиционирования на сайте */
+.container {
+  width: 100%;
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+/* общие значения для первой секции (отступы и flex-сы) */
+.main-section {
+  position: relative;
+  background-color: #357EFE;
+  padding-top: 40px;
+  overflow: hidden;
+}
+.main-section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 113px;
+}
+.main-section__text-and-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.main-section__finance {
+  margin-bottom: 40px;
+}
+.main-section__try-for-free {
+  padding-bottom: 80px;
+  /* ниже значения для большого прямоугольника (превая секция) */
+}
+.main-section__reg {
+  position: absolute;
+  max-width: 2332.12px;
+  max-height: 312px;
+  width: 110%;
+  height: 100%;
+  top: 730px;
+  left: 0px;
+  background-color: #FFFFFF;
+  transform: rotate(-7deg);
+  z-index: 0;
+}
+.main-section__finance-icons__fore {
+  max-width: 334px;
+}
+
+.logo {
+  max-width: 94px;
+  max-height: 27px;
+  width: 100%;
+  height: 100%;
+}
+.logo__header {
+  width: 100%;
+  height: 100%;
+}
+
+.finance-icons {
+  max-width: 334px;
+  max-height: 85px;
+  width: 100%;
+  height: 100%;
+}
+.finance-icons__logos {
+  width: 100%;
+  height: 100%;
+}
+
+.right-finance {
+  max-width: 1039px;
+  max-height: 627px;
+  width: 100%;
+  height: 100%;
+}
+.right-finance__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* занчения для навигационного меню в первой секции */
+.navigation__ul {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.navigation__ul a {
+  position: static;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* заначения для кнопки "личный кабинет" в первой секции */
+.personal-account__button {
+  padding: 12px 32px;
+  border-radius: 34px;
+  border: none;
+  color: #FFFFFF;
+}
+.personal-account__button a {
+  text-decoration: none;
+  color: #357EFE;
+}
+
+/* заначения для текста в середине первой секции (левая часть сердней секции) */          
+.finance-text {
+  text-align: left;
+}
+.finance-text__h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+/* значения для кнопки "попробовать 14 дней бесплатно" первой секции (левая часть средней секции) */
+.try-for-free__button {
+  padding: 12px 32px;
+  border-radius: 34px;
+  border: none;
+  color: #FFFFFF;
+}
+.try-for-free__button a {
+  text-decoration: none;
+  color: #357EFE;
+}
+
+/* значения для фото, где компьютер и наложенный внутри интерфейс (правая часть средней секции) */
+.right-finance__img {
+  max-width: 1039px;
+  position: relative;
+  z-index: 2;
+}
+
+/* общие значения для второй секции (отступы) */
+.second-section {
+  background-color: #FFFFFF;
+}
+.second-section__functions {
+  margin-bottom: 144px;
+}
+.second-section__statistics {
+  margin-bottom: 80px;
+}
+.second-section__statistics:last-child {
+  margin: 0px;
+}
+.second-section__basic-statistics {
+  margin-bottom: 120px;
+}
+
+/* значения для footer первой секции (flex-сы) */
+.functions__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+.functions__flex__one {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.functions__flex__two {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.functions__flex__three {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* модификатор для functions__flex */
+.functions_items {
+  font-size: 24px;
+  font-weight: 700;
+}
+.functions_items__logos {
+  max-width: 64px;
+}
+
+/* значения для первой колонки в second-section__basic-statistics (кассовые разрывы) */
+.cash-gaps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cash-gaps__left {
+  text-align: left;
+  margin-right: 90px;
+}
+.cash-gaps__left__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+  line-height: 120%;
+}
+.cash-gaps__left__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  line-height: 120%;
+}
+.cash-gaps__right {
+  max-width: 729px;
+  max-height: 445.5px;
+  width: 100%;
+  height: 100%;
+}
+.cash-gaps__right__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* значения для второй колонки в second-section__basic-statistics (Отчеты о прибыли и убытках) */
+.reports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reports__left {
+  max-width: 644px;
+  max-height: 444px;
+  width: 100%;
+  height: 100%;
+  margin-right: 60px;
+}
+.reports__left__img {
+  width: 100%;
+  height: 100%;
+}
+.reports__right {
+  text-align: left;
+}
+.reports__right__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 24px;
+  line-height: 120%;
+}
+.reports__right__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  line-height: 140%;
+}
+
+/* значение третьей колонки в second-section__basic-statistics (товары и прибыль) */
+.profit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profit__left {
+  text-align: left;
+  margin-right: 38px;
+}
+.profit__left__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 29px;
+  line-height: 120%;
+}
+.profit__left__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  line-height: 140%;
+}
+.profit__right {
+  max-width: 641px;
+  max-height: 416.7px;
+  width: 100%;
+  height: 100%;
+}
+.profit__right__img {
+  width: 100%;
+  height: 100%;
+}
+
+/* значение четвертой колонки в second-section__basic-statistics (про сокращение расходов) */
+.expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 247px;
+}
+.expenses__left {
+  position: relative;
+}
+.expenses__left__img-big {
+  max-width: 461px;
+  max-height: 372.94px;
+  width: 100%;
+  height: 100%;
+}
+.expenses__left__img-small {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  left: 160px;
+  bottom: 140px;
+}
+.expenses__right {
+  text-align: left;
+}
+.expenses__right__h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+.expenses__right__p {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(78, 93, 124, 0.5019607843);
+  line-height: 140%;
+}
+
+/* разделительная линия между колонками в basic-statistics */
+.basic-statistics__hr {
+  max-width: 1392px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 80px;
+  color: rgba(78, 93, 124, 0.5019607843);
+}
+
+/* общие значения для третьей секции */ 
+.third-section {
+  background-color: #357EFE;
+}
+.third-section__img {
+  margin-bottom: 64px;
+}
+
+/* значения для верхнего third-section__time-saving (h3, p, button) */
+.time-saving__upper-level {
+  padding-top: 120px;
+  text-align: center;
+}
+.time-saving__upper-level__h3 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.time-saving__upper-level__p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.time-saving__upper-level__button {
+  padding: 12px 32px;
+  background-color: #FFFFFF;
+  border-radius: 34px;
+  border: none;
+  margin-bottom: 76px;
+}
+.time-saving__upper-level__button a {
+  text-decoration: none;
+  color: #357EFE;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+
+/* значения для среднего уровня third-section__time-saving (накладывание фото друг на друга) */
+.time-saving__intermediate-level {
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+}
+.time-saving__intermediate-level__index-0 {
+  max-width: 1156px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.time-saving__intermediate-level__dop {
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 115px;
+  max-width: 598px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+.time-saving__intermediate-level__dop__index-1 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.time-saving__intermediate-level__gop {
+  position: absolute;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 664px;
+  top: 250px;
+}
+.time-saving__intermediate-level__gop__index-2 {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* значения для third-section__time-saving (flex) */
+.comparison-with-excel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comparison-with-excel__left-wrapper {
+  margin-right: 24px;
+}
+
+/* является "родителем" по отношению к excel__li */ 
+.excel-and-finio:last-child {
+  margin: 0px;
+}
+
+/* является "дочерней" по отношению к excel-and-finio */
+.excel__li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.excel__li__img {
+  margin-right: 10px;
+  height: 20px;
+}
+.excel__li__p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* является "дочерней" по отношению к excel-and-finio */   
+.finio__li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.finio__li__img {
+  margin-right: 10px;
+  height: 20px;
+}
+.finio__li__p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* Общее значение для четвертой секции */ 
+.fourth-section {
+  padding-top: 120px;
+  margin-bottom: 80px;
+}
+
+/* является "родителем" по отношению к advantages-flex__servers servers, advantages-flex__encryption encryption и advantages-flex__data-protection */
+.advantages-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 78px;
+}
+
+/* является "дочерней" по отношению к advantages-flex */
+.servers {
+  text-align: left;
+}
+.servers__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
+}
+.servers__img-servers {
+  width: 100%;
+  height: 100%;
+}
+.servers__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.servers__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* является "дочерней" по отношению к advantages-flex */  
+.encryption {
+  text-align: left;
+}
+.encryption__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
+}
+.encryption__img-shield {
+  width: 100%;
+  height: 100%;
+}
+.encryption__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 22px;
+}
+.encryption__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* является "дочерней" по отношению к advantages-flex */
+.data-protection {
+  text-align: left;
+}
+.data-protection__img {
+  max-width: 80px;
+  max-height: 80px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
+}
+.data-protection__img-castle {
+  width: 100%;
+  height: 100%;
+}
+.data-protection__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+.data-protection__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* значение для пятой секции */ 
+.fifth-section {
+  margin-bottom: 120px;
+}
+
+.mobile-version {
+  text-align: center;
+}
+.mobile-version__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.mobile-version__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.mobile-version__computer-and-iphone {
+  margin: 0 auto;
+  max-width: 1128px;
+  max-height: 749px;
+  width: 100%;
+  height: 100%;
+}
+.mobile-version__computer-and-iphone-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* заначения для разделяющей линии между пятой (fifth-section) и шестой (sixth-section) секцией */
+.around-advantages-and-mobile-version__hr {
+  margin-bottom: 80px;
+  text-align: center;
+  max-width: 1392px;
+  border: 1px solid rgba(78, 93, 124, 0.0784313725);
+}
+
+/* общие значения для шестой секции */
+.sixth-section__container {
+  max-width: 1392px;
+  width: 100%;
+  background-color: #357EFE;
+  border-radius: 16px;
+}
+
+/* значения для разделения в 2 частях, для customer-support */
+.customer-support {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 74px;
+  /* значения для картинки девушки в customer-support */ 
+  /* левая часть customer-support */
+}
+.customer-support__left-wrapper {
+  max-width: 623px;
+  max-height: 531px;
+  width: 100%;
+  height: 100%;
+}
+.customer-support__left-wrapper-img {
+  width: 100%;
+  height: 100%;
+}
+.customer-support__right-wrapper {
+  /* правая часть customer-support */
+}
+.customer-support__right-wrapper__h3 {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.customer-support__right-wrapper__p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 44px;
+}
+.customer-support__right-wrapper__icons-and-links {
+  margin-bottom: 40px;
+}
+.customer-support__right-wrapper__footer-p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* позиционирование для right-wrapper__icons-and-links (средняя часть - иконки) */            
+.icons-and-links__li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.icons-and-links__li:last-child {
+  margin: 0px;
+}
+.icons-and-links__li-img {
+  margin-right: 16px;
+}
+.icons-and-links__li-p {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* значения для седьмой части */
+/* значения для карточек tariffs */
+.tariffs {
+  /* небольшая модификация для 3 карточки (3 кнопки) */ 
+}
+.tariffs__title {
+  text-align: center;
+  padding-top: 80px;
+  margin-bottom: 40px;
+}
+.tariffs__title__h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.tariffs__title__p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+  color: rgba(78, 93, 124, 0.5019607843);
+}
+.tariffs__title a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+.tariffs__buttons-white {
+  padding: 12px 63px;
+  border-radius: 47px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.tariffs__buttons-white a {
+  color: #357EFE;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+.tariffs__buttons-white__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+.tariffs__buttons-white__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+/* значения flex для позиционирования карточек на сайте */
+.subscriptions {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-bottom: 80px;
+}
+.subscriptions__button {
+  padding: 12px 63px;
+  border-radius: 47px;
+  border: none;
+}
+.subscriptions__button a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 140%;
+}
+.subscriptions__button--blue {
+  background-color: #357EFE;
+}
+.subscriptions__button--white {
+  background-color: #FFFFFF;
+}
+.subscriptions__button--white a {
+  color: #357EFE;
+}
+.subscriptions__card {
+  text-align: left;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.subscriptions__card--one-month {
+  padding: 93px 40px 48px;
+}
+.subscriptions__card--six-months {
+  padding: 48px 40px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+.subscriptions__card--twelve-months {
+  padding: 48px 38px 48px 40px;
+  background-color: #357EFE;
+  border-radius: 8px;
+}
+.subscriptions__card__h3 {
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+.subscriptions__card__p {
+  color: rgba(78, 93, 124, 0.5019607843);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.subscriptions__card__calculation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.subscriptions__card__calculation__p {
+  color: #4E5D7C;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+/* модификаторы для белого цвета subscriptions_white и светло - серого цвета subscriptions_white-and-gray */
+.subscriptions_white {
+  color: #FFFFFF;
+}
+
+.subscriptions_white-and-gray {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* задаю значение для 3000 тысяч рублей во второй карточке (желтый фон) */
+.calculation_background {
+  padding: 8px 16px;
+  background-color: #FFC736;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+/* значение для второй и третьей карточки, где идет концетрация внимания на выгоде, на самом вверху */
+.subscriptions-benefit {
+  display: inline-block;
+  background-color: #1ABC9C;
+  color: #FFFFFF;
+  padding: 4px 16px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+/* значения margin для p тегов в subscriptions */
+.subscriptions_p-32 {
+  margin-bottom: 32px;
+}
+
+.subscriptions_p-50 {
+  margin-bottom: 50px;
+}
+
+/* обнуление, чтобы исправить "схлопывия margin" */
+.calculation_last {
+  margin: 0px;
+  margin-bottom: 40px;
+}
+
+/* значения margin для p тегов в calculation для первой карточки */
+.calculation_margin28px {
+  margin-right: 28px;
+}
+
+.calculation_margin72px {
+  margin-right: 72px;
+}
+
+.calculation_margin20px {
+  margin-right: 20px;
+}
+
+/* значения margin для p тегов в calculation для второй карточки */
+.calculation_margin27px {
+  margin-right: 27px;
+}
+
+.calculation_margin55px {
+  margin-right: 55px;
+}
+
+.calculation_margin19px {
+  margin-right: 19px;
+}
+
+/* значения margin для p тегов в calculation для третьей карточки */
+.calculation_margin40px {
+  margin-right: 40px;
+}
+
+.calculation_margin67px {
+  margin-right: 67px;
+}
+
+.calculation_margin32px {
+  margin-right: 32px;
+}
+
+/* значения для разделительной линия между subscriptions__items__calculation */
+.calculation__hr {
+  color: rgba(78, 93, 124, 0.0784313725);
+  max-width: 289px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+/* значения для разделительной лении, как модификатор (calculation__hr), для отступа с subscriptions-benefit */ 
+.calculation__hr__for-calculation_background {
+  color: rgba(78, 93, 124, 0.0784313725);
+  max-width: 289px;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 8px;
+}
+
+/* значения для восьмой секции (восьмая секция) */
+.reviews-header {
+  text-align: center;
+}
+.reviews-header__h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+
+.reviews-container {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1156px;
+  max-height: 438px;
+  width: 100%;
+  height: auto;
+  background-color: #357EFE;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+.reviews-container__left {
+  text-align: left;
+  padding: 20px;
+}
+.reviews-container__left__first {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.reviews-container__left__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.reviews-container__left__wb {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+.reviews-container__right {
+  flex: 1;
+  position: relative;
+  left: 118px;
+  max-width: 640px;
+  max-height: 640px;
+  width: 100%;
+  height: 100%;
+}
+.reviews-container__right__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* значения для нижней часть (footer) сайта, где есть переход по ресурсам на сайте (документация) */
+.footer {
+  background-color: #1A1D25;
+  padding-top: 80px;
+  padding-bottom: 24px;
+}
+.footer__hr {
+  border: 1px solid rgba(255, 255, 255, 0.0784313725);
+  margin: 0px;
+  margin-bottom: 38px;
+}
+.footer__flex-top {
+  margin-bottom: 38px;
+}
+
+/* значения для верхней уровень footer (документация) */
+.flex-top {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-top__item {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+.flex-top__item__img {
+  margin-bottom: 16px;
+}
+.flex-top_white {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+/* значения для нижнего уровеня footer (права защищены и иконки банковский карт) */   
+.all-rights-reserved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-rights-reserved__left {
+  text-align: left;
+}
+.all-rights-reserved__left__p {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+.all-rights-reserved__icons-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icons-flex__icon {
+  max-width: 79px;
+  max-height: 28px;
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-visa {
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-maxter-card {
+  width: 100%;
+  height: 100%;
+}
+.icons-flex__icon-world {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .main-section__reg {
+    top: 564px;
+  }
+  .try-for-free__button {
+    padding: 10px 18px;
+  }
+  .finance-text__h2 {
+    font-size: 30px;
+  }
+  .main-section__header {
+    padding-bottom: 80px;
+  }
+  .second-section__basic-statistics {
+    margin-bottom: 80px;
+  }
+  .second-section__functions {
+    margin-bottom: 130px;
+  }
+  .functions_items {
+    font-size: 20px;
+  }
+  .cash-gaps__left__h3 {
+    font-size: 30px;
+  }
+  .cash-gaps__left__p {
+    font-size: 14px;
+  }
+  .reports__right__h3 {
+    font-size: 30px;
+  }
+  .reports__right__p {
+    font-size: 14px;
+  }
+  .profit__left__h3 {
+    font-size: 30px;
+  }
+  .profit__left__p {
+    font-size: 14px;
+  }
+  .expenses__right__h3 {
+    font-size: 30px;
+  }
+  .expenses__right__p {
+    font-size: 14px;
+  }
+  .expenses__left__img-small {
+    left: 134px;
+    bottom: 121px;
+  }
+  .time-saving__upper-level {
+    padding-top: 90px;
+  }
+  .time-saving__upper-level__h3 {
+    font-size: 38px;
+  }
+  .time-saving__upper-level__p {
+    font-size: 14px;
+  }
+  .time-saving__upper-level__button {
+    padding: 10px 30px;
+  }
+  .time-saving__intermediate-level__dop {
+    max-width: 493px;
+    left: 0px;
+  }
+  .time-saving__intermediate-level__gop {
+    left: 443px;
+  }
+  .fourth-section {
+    padding-top: 90px;
+  }
+  .servers__h3 {
+    font-size: 28px;
+  }
+  .servers__p {
+    font-size: 15px;
+  }
+  .encryption__h3 {
+    font-size: 28px;
+  }
+  .encryption__p {
+    font-size: 15px;
+  }
+  .data-protection__h3 {
+    font-size: 28px;
+  }
+  .data-protection__p {
+    font-size: 15px;
+  }
+  .mobile-version__h3 {
+    font-size: 40px;
+  }
+  .mobile-version__p {
+    font-size: 15px;
+  }
+  .customer-support__right-wrapper__h3 {
+    font-size: 35px;
+  }
+  .customer-support__right-wrapper__p {
+    font-size: 15px;
+  }
+  .customer-support__right-wrapper__footer-p {
+    font-size: 15px;
+  }
+  .tariffs__title__h3 {
+    font-size: 44px;
+  }
+  .tariffs__title__p {
+    font-size: 15px;
+  }
+  .subscriptions__card__h3 {
+    font-size: 28px;
+  }
+  .subscriptions__card__p {
+    font-size: 15px;
+  }
+  .subscriptions__card__calculation__p {
+    font-size: 15px;
+  }
+  .subscriptions__button {
+    padding: 15px 28px;
+  }
+  .subscriptions__button a {
+    font-size: 15px;
+  }
+  .calculation_background {
+    padding: 6px;
+  }
+  .subscriptions__card__calculation__p {
+    font-size: 12px;
+  }
+  .reviews-container__right {
+    left: 86px;
+  }
+  .footer {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  .flex-top {
+    gap: 20px;
+  }
+  .flex-top__item {
+    font-size: 15px;
+  }
+  .all-rights-reserved__left__p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+  .personal-account__button {
+    padding: 6px 16px;
+  }
+  .navigation__ul {
+    align-items: center;
+    gap: 20px;
+  }
+  .navigation__ul a {
+    font-size: 15px;
+  }
+  .main-section__finance {
+    margin-bottom: 20px;
+  }
+  .finance-text__h2 {
+    font-size: 20px;
+  }
+  .try-for-free__button {
+    padding: 5px 12px;
+  }
+  .main-section__try-for-free {
+    padding-bottom: 30px;
+  }
+  .main-section__reg {
+    top: 386px;
+  }
+  .functions_items {
+    font-size: 17px;
+  }
+  .functions__flex {
+    gap: 50px;
+  }
+  .expenses__left__img-small {
+    left: 107px;
+    bottom: 93px;
+  }
+  .expenses {
+    gap: 162px;
+  }
+  .time-saving__intermediate-level__dop {
+    max-width: 370px;
+  }
+  .time-saving__intermediate-level__gop {
+    left: 321px;
+    top: 187px;
+  }
+  .excel__li__p {
+    font-size: 15px;
+  }
+  .finio__li__p {
+    font-size: 15px;
+  }
+  .customer-support__right-wrapper__h3 {
+    font-size: 30px;
+  }
+  .customer-support__right-wrapper__p {
+    margin-bottom: 35px;
+  }
+  .subscriptions {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .subscriptions__items {
+    margin-bottom: 20px;
+  }
+  .subscriptions__items:last-child {
+    margin: 0px;
+  }
+  .reviews-container__left__first {
+    font-size: 24px;
+  }
+  .reviews-container__left__name {
+    font-size: 15px;
+  }
+  .reviews-container__left__wb {
+    font-size: 15px;
+  }
+  .reviews-container__right {
+    left: 13px;
+  }
+  .eighth-section__img-index1 {
+    max-width: 446px;
+    width: 100%;
+    left: 369px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+  .navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    background: green;
+    z-index: 20;
+    transition: 0.6s all;
+  }
+  .navigation__ul {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .navigation__ul a {
+    font-size: 20px;
+  }
+  .personal-account {
+    display: none;
+  }
+  .hamburger {
+    width: 30px;
+    height: 14px;
+    z-index: 30;
+  }
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+    background: #FFFFFF;
+    transition: 1s all;
+  }
+  .hamburger span:last-child {
+    margin: 0px;
+  }
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .navigation_active {
+    right: 0px;
+  }
+  .right-finance {
+    display: none;
+  }
+  .functions__flex {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .functions_items {
+    font-size: 25px;
+  }
+  .finance-text__h2 {
+    font-size: 31px;
+  }
+  .try-for-free__button {
+    padding: 12px 32px;
+  }
+  .main-section__header {
+    padding-bottom: 50px;
+  }
+  .main-section__reg {
+    top: 400px;
+  }
+  .second-section__functions {
+    margin-bottom: 80px;
+  }
+  .cash-gaps {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .cash-gaps__left {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .cash-gaps__left__h3 {
+    font-size: 32px;
+  }
+  .cash-gaps__left__p {
+    font-size: 18px;
+  }
+  .reports {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .reports__right {
+    text-align: center;
+  }
+  .reports__right__h3 {
+    font-size: 32px;
+  }
+  .reports__right__p {
+    font-size: 18px;
+  }
+  .profit {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .profit__left {
+    text-align: center;
+    margin-right: 0px;
+  }
+  .profit__left__h3 {
+    font-size: 32px;
+  }
+  .profit__left__p {
+    font-size: 18px;
+  }
+  .expenses {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .expenses__right {
+    text-align: center;
+  }
+  .expenses__right__h3 {
+    font-size: 32px;
+  }
+  .expenses__right__p {
+    font-size: 18px;
+  }
+  .expenses__left__img-small {
+    max-width: 296px;
+    left: 216px;
+    bottom: 142px;
+  }
+  .time-saving__upper-level__h3 {
+    font-size: 36px;
+  }
+  .time-saving__upper-level__p {
+    font-size: 18px;
+  }
+  .time-saving__upper-level__button {
+    padding: 12px 32px;
+  }
+  .time-saving__intermediate-level__dop {
+    max-width: 276px;
+  }
+  .time-saving__intermediate-level__gop {
+    left: 227px;
+    top: 121px;
+  }
+  .advantages-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+    flex-wrap: wrap;
+  }
+  .customer-support {
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 31px;
+    flex-direction: column-reverse;
+  }
+  .customer-support__right-wrapper__h3 {
+    font-size: 36px;
+  }
+  .customer-support__right-wrapper__p {
+    margin-bottom: 18px;
+  }
+  .customer-support__right-wrapper__footer-p {
+    font-size: 18px;
+  }
+  .tariffs__title__h3 {
+    font-size: 36px;
+  }
+  .tariffs__title__p {
+    font-size: 17px;
+  }
+  .customer-support__right-wrapper {
+    padding-top: 64px;
+  }
+  .expenses__left__img-small {
+    max-width: 280px;
+    left: 224px;
+  }
+  .reviews-container__left {
+    padding: 10px;
+  }
+  .reviews-container__left__first {
+    font-size: 20px;
+  }
+  .reviews-container__left__name {
+    font-size: 14px;
+  }
+  .reviews-container__left__wb {
+    font-size: 14px;
+  }
+  .subscriptions__card__calculation__p {
+    font-size: 15px;
+  }
+  .flex-top {
+    gap: 11px;
+  }
+  .flex-top__item {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 320px;
+  }
+  .main-section__reg {
+    top: 474px;
+  }
+  .expenses__left__img-small {
+    max-width: 143px;
+    left: 180px;
+    bottom: 104px;
+  }
+  .time-saving__intermediate-level__dop {
+    max-width: 163px;
+  }
+  .time-saving__intermediate-level__gop {
+    left: 115px;
+    top: 54px;
+  }
+  .comparison-with-excel {
+    flex-wrap: wrap;
+  }
+  .comparison-with-excel__left-wrapper {
+    margin: 0px;
+    margin-bottom: 48px;
+  }
+  .reviews-container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+  .reviews-container__right {
+    left: 0px;
+    bottom: 24px;
+  }
+  .subscriptions__button {
+    padding: 6px 48px;
+  }
+  .subscriptions__button a {
+    font-size: 16px;
+  }
+  .flex-top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .all-rights-reserved {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .all-rights-reserved__icons-flex {
+    margin-bottom: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

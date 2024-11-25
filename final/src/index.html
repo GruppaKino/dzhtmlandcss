@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- первая секция с навигационным меню по странице -->    
+    <header class="main-section">
+        <div class="container main-section__header">
+            <!-- лого компании слева от навигационного меню -->
+            <div class="main_section__title-logo logo">
+                <a href="#"><img src="./img/finio.png" alt="лого FINIO для header" class="logo__header"></a>
+            </div>
+            <!-- само навигационное меню -->
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+            <nav class="main-section__nav navigation">
+                <ul class="navigation__ul">
+                    <li><a href="#">Возможности</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Поддержка клинтов</a></li>
+                </ul>
+            </nav>
+            <!-- личный кабинет справа от навигационного меню -->
+            <div class="main-section__personal-account personal-account">
+                <!-- кнопка личного кабинета -->
+                <button class="personal-account__button">
+                    <a href="#">Личный кабинет</a>
+                </button>
+            </div>
+        </div>
+        <!-- вторая часть первой секции, где слева текст с h1 и иконками компаний, а справа img компьютера-->
+        <section class="container main-section__text-and-logo">
+            <!-- это левая часть среднего уровня, где h1 и иконки -->
+            <div class="main-section__left-finance left-finance">
+                <div class="main-section__finance finance-text">
+                    <h2 class="finance-text__h2">
+                        Простой финансовый <br> учёт для продавцов на <br> маркетплейсах
+                    </h2>
+                </div>
+                <div class="main-section__try-for-free try-for-free">
+                    <button class="try-for-free__button">
+                        <a href="#">Попробовать 14 дней бесплатно</a>
+                    </button>
+                </div>
+                <div class="main-section__finance-icons finance-icons">
+                    <img src="./icons/brands.png" alt="иконки брендов" class="finance-icons__logos">
+                </div>
+            </div>
+            <!-- это правая часть среднего уровня, где картинка компьютера, и наложеный по - середине интерфейс к этой картинке -->
+            <div class="main-section__right-finance right-finance">
+                <img src="./img/pc.png" alt="большое лого компьютера в header" class="right-finance__img">
+            </div>
+        </section>
+        <div class="main-section__reg reg">
+        </div>
+    </header>
+    <!-- вторая секция, где я делал колонки с помощью flex - про кассовые разрывы, отчеты о прибыли и т.д -->
+    <section class="second-section">
+        <!-- second-section__functions - этот див, как небольшое footer для первой секции -->
+        <div class="container second-section__functions">
+            <div class="functions__flex functions_backgraund">
+                <div class="functions__flex__one functions_items">
+                    <img src="./icons/graphics.png" alt="иконка анализа прибыли">
+                    <p>
+                        Анализ прибыли по <br> товарам и брендам
+                    </p>
+                </div>
+                <div class="functions__flex__two functions_items">
+                    <img src="./icons/wb.png" alt="" class="functions_items__logos">
+                    <p>
+                        Автоматический учёт <br> доходов Wildberries
+                    </p>
+                </div>
+                <div class="functions__flex__three functions_items">
+                    <img src="./icons/rub.png" alt="иконка рубля">
+                    <p>
+                        От 990 рублей в месяц <br> с полным функционалом
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 4 колонки (div), где есть img и текст к ней (слева направо и наоборот) -->
+        <div class="container second-section__basic-statistics">
+            <!-- первая колонка про "кассовые разрывы" -->
+            <div class="second-section__statistics cash-gaps">
+                <div class="cash-gaps__left">
+                    <h3 class="cash-gaps__left__h3">
+                        Предотвращайте <br> кассовые разрывы
+                    </h3>
+                    <p class="cash-gaps__left__p">
+                        Заранее планируйте предстоящие платежи и <br> поступления средств. Тем самым, вы избежите <br> неприятной ситуации с нехваткой средств на счетах
+                    </p>                
+                </div>
+                <div class="cash-gaps__right">
+                    <img src="./img/cash-gaps.png" alt="Статистика" class="cash-gaps__right__img">
+                </div>
+            </div>
+            <!-- черта для разделения колонок -->
+            <hr class="basic-statistics__hr">
+            <!-- вторая колонка про "Отчеты о прибыли и убытках" -->
+            <div class="second-section__statistics reports">
+                <div class="reports__left">
+                    <img src="./img/report 1.png" alt="Отчеты о прибыли" class="reports__left__img">
+                </div>
+                <div class="reports__right">
+                    <h3 class="reports__right__h3">
+                        Отчёты о прибыли и <br> убытках всегда под рукой
+                    </h3>
+                    <p class="reports__right__p">
+                        Получите полную информацию о состоянии вашего бизнеса, <br> включающую все необходимые показатели для принятия <br> правильных решений
+                    </p>
+                </div>
+            </div>
+            <!-- черта для разделения колонок -->
+            <hr class="basic-statistics__hr">
+            <!-- третья колонка про "товары и прибыль" -->
+            <div class="second-section__statistics profit">
+                <div class="profit__left">
+                    <h3 class="profit__left__h3">
+                        Какие товары приносят <br> прибыль
+                    </h3>
+                    <p class="profit__left__p">
+                        Находите точки роста, делайте упор на рентабельные <br> товары и увеличивайте свой доход
+                    </p>
+                </div>
+                <div class="profit__right">
+                    <img src="./img/profit.png" alt="Какие товары приносят прибыль" class="profit__right__img">
+                </div>
+            </div>
+            <!-- черта для разделения колонок -->
+            <hr class="basic-statistics__hr">
+            <!-- последнаяя колонка про "про сокращение расходов" -->
+            <div class="second-section__statistics expenses">
+                <!-- делал накладывание фоток друг на дурга -->
+                <div class="expenses__left">
+                    <img src="./img/expenses_big.png" alt="Картинка с меньшем индексом" class="expenses__left__img-big">
+                    <img src="./img/expenses_small.png" alt="Картинка с большим индексом" class="expenses__left__img-small">
+                </div>
+                <div class="expenses__right">
+                    <h3 class="expenses__right__h3">
+                        Сокращайте лишние <br> расходы
+                    </h3>
+                    <p class="expenses__right__p">
+                        Анализируйте расходы, убирать ненужные издержки и <br> находите возможности повышать прибыльность бизнеса
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- третья секция содержит в себе: тект про экономию времени h2, p, button; накладывание фотографий друг на друга и flex сравнивая Excel и FINIO -->
+    <section class="third-section">
+        <div class="container third-section__time-saving">
+            <!-- этот div содержит себе верхушку третьей секции -->
+            <div class="third-section__title time-saving__upper-level">
+                <h2 class="time-saving__upper-level__h3">
+                    Экономьте время и нервы на учет
+                </h2>
+                <p class="time-saving__upper-level__p">
+                    Автоматическая синхронизация данных с маркетплейсов позволит вам мгновенно получать все важный показатели бизнеса на <br> одном экране. А с помощью мобильной версии вы сможете вносить расходы всего пару кликов
+                </p>
+                <button class="time-saving__upper-level__button">
+                    <a href="#">
+                        Попробовать 14 дней бесплатно
+                    </a>
+                </button>
+            </div>
+            <!-- середина третьей секции, где идет накладывание фотографий друг на друга -->
+            <div class="third-section__img time-saving__intermediate-level">
+                <img src="./img/time-saving__index-0.png" alt="Первое фото индекс 0" class="time-saving__intermediate-level__index-0">
+                <div class="third-section__img time-saving__intermediate-level__dop">
+                    <img src="./img/time-saving__index1.png" alt="" class="time-saving__intermediate-level__dop__index-1">
+                </div>
+                <div class="third-section__img time-saving__intermediate-level__gop">
+                    <img src="./icons/index-2.png" alt="" class="time-saving__intermediate-level__gop__index-2">
+                </div>
+            </div>
+            </div>
+            <!-- footer третьей секции, где я делал flex сравнения Excel и FINIO -->
+            <div class="third-section__flex comparison-with-excel">
+                <!-- левая часть footer, про excel -->
+                <div class="comparison-with-excel__left-wrapper">
+                    <ul class="excel-and-finio">
+                        <li class="excel__li">
+                            <img src="./icons/excel-logo.png" alt="Иконка excel для флекса" class="excel__li__logo-excel">
+                        </li>
+                        <li class="excel__li">
+                            <img src="./icons/exclamation-point.png" alt="минусы" class="excel__li__img">
+                            <p class="excel__li__p">
+                                Долгое внесение данных
+                            </p>
+                        </li>
+                        <li class="excel__li">
+                            <img src="./icons/exclamation-point.png" alt="минусы" class="excel__li__img">
+                            <p class="excel__li__p">
+                                Ручной ввод данных с маркетплейсов
+                            </p>
+                        </li>
+                        <li class="excel__li">
+                            <img src="./icons/exclamation-point.png" alt="минусы" class="excel__li__img">
+                            <p class="excel__li__p">
+                                Не удобная работа с телефона
+                            </p>
+                        </li>
+                        <li class="excel__li">
+                            <img src="./icons/exclamation-point.png" alt="минусы" class="excel__li__img">
+                            <p class="excel__li__p">
+                                Сложность восприятия итоговых данных
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- правая часть, про FINIO -->
+                <div class="comparison-with-excel__right-wrapper">
+                    <ul class="excel-and-finio">
+                        <li class="finio__li">
+                            <img src="./icons/FINIO-icon.png" alt="Лого FINIO для флекса" class="finio__li__logo-finio">
+                        </li>
+                        <li class="finio__li">
+                            <img src="./icons/tick.png" alt="галочка" class="finio__li__img">
+                            <p class="finio__li__p">
+                                Внесение данных за пару кликов
+                            </p>
+                        </li>
+                        <li class="finio__li">
+                            <img src="./icons/tick.png" alt="галочка" class="finio__li__img">
+                            <p class="finio__li__p">
+                                Автоматическое получение данных по API
+                            </p>
+                        </li>
+                        <li class="finio__li">
+                            <img src="./icons/tick.png" alt="галочка" class="finio__li__img">
+                            <p class="finio__li__p">
+                                Удобная мобильная версия
+                            </p>
+                        </li>
+                        <li class="finio__li">
+                            <img src="./icons/tick.png" alt="галочка" class="finio__li__img">
+                            <p class="finio__li__p">
+                                Наглядные отчеты, графики и таблицы
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- четвертая секция, не большая секция где я делал с помощью flex 3 колонки, где написаны преимушества использования технологий компании --> 
+    <section class="fourth-section">
+        <div class="container fourth-section__advantages">
+            <div class="advantages-flex">
+                <!-- первая колонка об "надежности серверов" -->
+                <div class="advantages-flex__servers servers">
+                    <div class="servers__img">
+                        <img src="./icons/servers-img-cloud.png" alt="картинка сервера" class="servers__img-servers">
+                    </div>
+                    <h3 class="servers__h3">
+                        Надёжные сервера на территории России
+                    </h3>
+                    <p class="servers__p">
+                        Никакие события не скажутся на бесперебойной работе сервиса.
+                    </p>
+                </div>
+                <!-- вторая колонка, об "Использовани SSL-шифрования" -->
+                <div class="advantages-flex__encryption encryption">
+                    <div class="encryption__img">
+                        <img src="./icons/encryption-icons.png" alt="картинка щита" class="encryption__img-shield">
+                    </div>
+                    <h3 class="encryption__h3">
+                        Используем 256-битное SSL-шифрование
+                    </h3>
+                    <p class="encryption__p">
+                        Ваши данные не могут быть перехвачены, даже при использовании открытых Wi-Fi сетей
+                    </p>
+                </div>
+                <!-- третья колонка об "не передачи данных другим лицам" -->
+                <div class="advantages-flex__data-protection">
+                    <div class="data-protection__img">
+                        <img src="./icons/data-protection-icons.png" alt="иконка, что аккаунт под защитой" class="data-protection__img-castle">
+                    </div>
+                    <h3 class="data-protection__h3">
+                        Не передаём ваши данные 3-им лицам
+                    </h3>
+                    <p class="data-protection__p">
+                        Все данные о доходах и расходах компании видны только вам и тем, кому вы открыли доступ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="around-advantages-and-mobile-version__hr">
+    <!-- пятая секция, где я размещал фотку компьютера и телефона (про адаптив на мобилку) -->
+    <section class="fifth-section">
+        <div class="container fifth-section__container">
+            <div class="fifth-section__mobile-version mobile-version">
+                <h3 class="mobile-version__h3">
+                    Мобильная версия
+                </h3>
+                <p class="mobile-version__p">
+                    Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств
+                </p>
+                <div class="mobile-version__computer-and-iphone">
+                    <img src="./img/computer-and-phone.png" alt="картинка компьютера и телефона" class="mobile-version__computer-and-iphone-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- шестая секция, про поддержку клиентов на сайте, куда обращаться -->
+    <section class="sixth-section">
+        <div class="container sixth-section__container">
+            <!-- разделил на 2 части, левую (фото девшуки) и правую (текст с иконками "куда обращаться") -->
+            <div class="sixth-section__customer-support customer-support">
+                <!-- левая часть (фото девушки) -->
+                <div class="customer-support__left-wrapper">
+                    <img src="./img/girl-in-customer-support.png" alt="Фото девушки в customer-support" class="customer-support__left-wrapper-img">
+                </div>
+                <!-- правая часть (текст и иконки) -->
+                <div class="customer-support__right-wrapper">
+                    <!-- текст про поддержку клиентов (верхняя часть) -->
+                    <h3 class="customer-support__right-wrapper__h3">
+                        Поддержка клиентов
+                    </h3>
+                    <p class="customer-support__right-wrapper__p">
+                        Мы всегда готовы ответить на любые вопросы <br> в онлайн чате или по телефону
+                    </p>
+                    <!-- средняя часть, тут иконки куда общааться -->
+                    <ul class="customer-support__right-wrapper__icons-and-links">
+                        <li class="icons-and-links__li">
+                            <img src="./icons/telegram-in-icons-and-links.png" alt="иконка телеграмма в icons-and-links" class="icons-and-links__li-img">
+                            <p class="icons-and-links__li-p">
+                                Telegram Finio
+                            </p>
+                        </li>
+                        <li class="icons-and-links__li">
+                            <img src="./icons/whats-up-in-icons-and-links.png" alt="иконка whats up в icons-and-links" class="icons-and-links__li-img">
+                            <p class="icons-and-links__li-p">
+                                WhatsApp Finio
+                            </p>
+                        </li>
+                        <li class="icons-and-links__li">
+                            <img src="./icons/litter-in-icons-and-links.png" alt="иконка письма в icons-and-links" class="icons-and-links__li-img">
+                            <p class="icons-and-links__li-p">
+                                hello@finio.ru
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- ну и нижняя часть, где говорится про перенос -->
+                    <p class="customer-support__right-wrapper__footer-p">
+                        Кроме того, мы готовы помочь вам с переносом <br> данных из других сервисов или Excel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- седьмая секция, где я делал карточки для выбора тарифов еа сайте (стоимость, выгода и так далее) -->
+    <section class="seventh-section">
+        <div class="container seventh-section__container">
+            <!-- сделал общий "div" для этих карточек (tariffs) -->
+            <div class="seventh-section__tariffs tariffs">
+                <!-- верхняя часть, над карточками, чтобы было понятно, что это тарифы, для удобства пользователям -->
+                <div class="tariffs__title">
+                    <h3 class="tariffs__title__h3">
+                        Тарифы
+                    </h3>
+                    <p class="tariffs__title__p">
+                        Все тарифы имеют полный функционал и отличаются только количеством месяцев и выгодой
+                    </p>
+                </div>
+                <!-- flex для позиционирования карточек на сайте -->
+                <div class="tariffs__flex subscriptions">
+                    <!-- первая карточка на 1 месяц, где я использовал модификаторы для padding внутри div и border для обозначения -->
+                    <div class="subscriptions__card subscriptions__card--one-month">
+                        <h3 class="subscriptions__card__h3">
+                            1 месяц
+                        </h3>
+                        <!-- так же я использовал отступы для некоторых тегов, чтобы отделить их друг от друга - использовал модификатор subscriptions_m... -->
+                        <p class="subscriptions__card__p subscriptions_p-50">
+                            Тариф подойдёт тем, кто ведёт <br> краткосрочные проекты
+                        </p>
+                        <!-- отдельно выделил основную информацию о стоимости, так же использовал модификаторы для отступов calculation_margin... --> 
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin28px">
+                                Общая стоимость
+                            </p>
+                            <p class="subscriptions__card__calculation__p">
+                                1 990 ₽
+                            </p>
+                        </div>
+                        <!-- разделительная линия между subscriptions__items__calculation -->
+                        <hr class="calculation__hr">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin72px">
+                                Ваша выгода
+                            </p>
+                            <p class="subscriptions__card__calculation__p">
+                                0 ₽
+                            </p>
+                        </div>
+                        <hr class="calculation__hr">
+                        <div class="subscriptions__card__calculation calculation_last">
+                            <p class="subscriptions__card__calculation__p
+                            calculation_margin20px">
+                                Стоимость месяца
+                            </p>
+                            <p class="subscriptions__card__calculation__p">
+                                1 990 ₽/мес
+                            </p>
+                        </div>
+                        <!-- сделал кнопку для перехода к оплате --> 
+                        <button class="subscriptions__button subscriptions__button--blue">
+                            <a href="#">
+                                Бесплатно 14 дней
+                            </a>
+                        </button>
+                    </div>
+                    <!-- 2 карточка, где дополнительно есть информация о выгоде в 25% и выделение стоимости в 3 тысячи рублей на желтом фоне -->
+                    <div class="subscriptions__card subscriptions__card--six-months">
+                        <!-- отдельный класс для концетрации внимания на выгоде -->
+                        <p class="subscriptions-benefit">
+                            Выгода 25%
+                        </p>
+                        <h3 class="subscriptions__card__h3 ">
+                            6 месяцев
+                        </h3>
+                        <p class="subscriptions__card__p subscriptions_p-50">
+                            Тариф подойдёт для тех, кто <br> уверенно ведёт финансовый учёт
+                        </p>
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p
+                            calculation_margin27px">
+                                Общая стоимость
+                            </p>
+                            <p class="subscriptions__card__calculation__p">
+                                8 940 ₽
+                            </p>
+                        </div>
+                        <hr class="calculation__hr__for-calculation_background">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin55px">
+                                Ваша выгода
+                            </p>
+                            <!-- указал дополнительный модификатор для 3 000 р (желтый фон) -->
+                            <p class="subscriptions__card__calculation__p calculation_background">
+                                3 000 ₽
+                            </p>
+                        </div>
+                        <hr class="calculation__hr">
+                        <div class="subscriptions__card__calculation calculation_last">
+                            <p class="subscriptions__card__calculation__p
+                            calculation_margin19px">
+                                Стоимость месяца
+                            </p>
+                            <p class="subscriptions__card__calculation__p">
+                                1 490 ₽/мес
+                            </p>
+                        </div>
+                        <button class="subscriptions__button subscriptions__button--blue">
+                            <a href="#">
+                                Бесплатно 14 дней
+                            </a>
+                        </button>
+                    </div>
+                    <!-- 3 карточка, где стоит выделить синий фон и модификаторы для белого цвета subscriptions_white и светло - серого цвета subscriptions_white-and-gray -->
+                    <div class="subscriptions__card subscriptions__card--twelve-months">
+                        <p class="subscriptions-benefit">
+                            Выгода 50%
+                        </p>
+                        <h3 class="subscriptions__card__h3 subscriptions_white">
+                            12 месяцев
+                        </h3>
+                        <p class="subscriptions__card__p subscriptions_p-32 .subscriptions_white-and-gray">
+                            Тариф подойдёт для тех, кто <br> уверенно ведёт финансовый учёт <br> и хочет сэкономить
+                        </p>
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p
+                            calculation_margin40px subscriptions_white">
+                                Общая стоимость
+                            </p>
+                            <p class="subscriptions__card__calculation__p subscriptions_white">
+                                11 880 ₽
+                            </p>
+                        </div>
+                        <hr class="calculation__hr__for-calculation_background">
+                        <div class="subscriptions__card__calculation">
+                            <p class="subscriptions__card__calculation__p calculation_margin67px subscriptions_white">
+                                Ваша выгода
+                            </p>    
+                            <p class="subscriptions__card__calculation__p
+                            calculation_background">
+                                12 000 ₽
+                            </p>
+                        </div>
+                        <!-- разделительная линия между subscriptions__items__calculation --> 
+                        <hr class="calculation__hr">
+                        <div class="subscriptions__card__calculation calculation_white calculation_last">
+                            <p class="subscriptions__card__calculation__p calculation_margin32px subscriptions_white">
+                                Стоимость месяца
+                            </p>
+                            <p class="subscriptions__card__calculation__p subscriptions_white">
+                                990 ₽/мес
+                            </p>
+                        </div>
+                        <!-- отдельно делал кнопку бля белого фона и синего цвета текста -->
+                        <button class="subscriptions__button subscriptions__button--white">
+                            <a href="#">
+                                Бесплатно 14 дней
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- восьмая секция, небольшой блок, где разместил отзыв клиентов -->
+    <div class="reviews-header">
+        <h3 class="reviews-header__h3">
+            Отзывы
+        </h3>
+    </div>
+    <section class="reviews-container container">
+        <div class="reviews-container__left">
+            <p class="reviews-container__left__first">
+                Впервые за долгое время <br> увидела свои расходы и <br> доходы как на ладони.
+            </p>
+            <p class="reviews-container__left__name">
+                Дана Валеева
+            </p>
+            <p class="reviews-container__left__wb">
+                Продавец Wildberries
+            </p>
+        </div>
+        <div class="reviews-container__right">
+            <img src="./img/girl.png" alt="девушка, которая написала отзыв" class="reviews-container__right__img">
+        </div>
+    </section>
+    <!-- нижняя часть (footer) сайта, где есть переход по ресурсам на сайте (документация) -->
+    <section class="footer">
+        <div class="container footer__container">
+            <!-- верхний уровень footer (документация) -->
+            <div class="footer__flex-top flex-top">
+                <div class="flex-top__item">
+                    <img src="./icons/FINIO-icon.png" alt="лого FINIO" class="flex-top__item__img">
+                    <p class="flex-top__item">
+                        <span style="color: #FFFFFFB3;">Простой финансовый учёт для <br> продавцов на маркетплейсах</span>
+                    </p>
+                </div>
+                <div class="flex-top__item2">
+                    <p class="flex-top__item">
+                        Возможности <br>
+                        Тарифы <br>
+                        Отзывы <br>
+                        Поддержка клиентов
+                    </p>
+                </div>
+                <div class="flex-top__item3">
+                    <p class="flex-top__item">
+                        Политика конфиденциальности <br>
+                        Пользовательское соглашение <br>
+                        Оплата и возврат <br>
+                        Договор оферта		
+                    </p>
+                </div>
+                <div class="flex-top__item4">
+                    <!-- модификатор для flex-top__item4 (flex-top_white) -->
+                    <p class="flex-top__item flex-top_white">
+                        ИП Ларичев Антон Андреевич <br> 
+                        ИНН 773373765379 <br>
+                        ОГРИП 322774600208776 <br>
+                        Эл. почта: <span style="color: #FFFFFF80">alarichev@gmail.com</span> <br>
+                        Тел.: +7 (910) 435-75-92 <br>
+                        Москва, Вилиса Лациса 25		
+                    </p>
+                </div>
+            </div>
+            <!-- разделенная линиия между footer__flex-top и footer__end__all-rights-reserved -->
+            <hr class="footer__hr">
+            <!-- нижний уровень footer (права защищены и иконки банковский карт) -->
+            <div class="footer__end__all-rights-reserved all-rights-reserved">
+                <div class="all-rights-reserved__left">
+                    <p class="all-rights-reserved__left__p">
+                        © 2022 Finio. Все права защищены.
+                    </p>
+                </div>
+                <!-- позиционировал иконки банковских карт через flex -->
+                <div class="all-rights-reserved__right all-rights-reserved__icons-flex">
+                    <div class="icons-flex__icon">
+                        <img src="./icons/visa.png" alt="иконка карты визы" class="icons-flex__icon-visa">
+                    </div>
+                    <div class="icons-flex__icon">
+                        <img src="./icons/master-card.png" alt="иконка карты мастер карт" class="icons-flex__icon-master-card">
+                    </div>
+                    <div class="icons-flex__icon">
+                        <img src="./icons/world.png" alt="иконка карты мир" class="icons-flex__icon-world">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/script.js"></script>
+</body>
+</html>
